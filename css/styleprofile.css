@@ -171,7 +171,7 @@ ul{
     display:flex;
     justify-content: center;
     align-items:center;
-    margin-top: 35%;
+    margin-top: 20%;
 }
 .itemcontainer button{
     font-family:"Montserrat", sans-serif;
@@ -380,6 +380,7 @@ ul{
     width: 45%;
     margin-left:20px;
     height:310px;
+    margin-left:40px;
     background-color:#252422;
     display: inline;
     float:right;
@@ -441,7 +442,7 @@ ul{
     height: 50px;
     font-style: 100px;
     margin-top: 310px;
-    margin-left: 150px;
+    margin-left: 139px;
     background-color: #252422;
     float:left;
     display: inline;
@@ -559,22 +560,21 @@ ul{
     margin-left:44.5%;
 }
 .tablink {
-    margin-top:3px;
+
+    margin-top:10px;
     background-color:#252422;
     text-align:center;
     color: #CCC5B9;
     border: #EB5E28;
     outline-color: orange;
-    float:left;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 14px 20px;
     font-size: 17px;
-    width: 9%;
-    margin-left: 10px;
-    right:200px;
-  
-    
+    width: 0px;
+    display: inline;
   }
+
+  
 
 .tablink:hover {
     background-color: #525252;
@@ -593,8 +593,18 @@ ul{
 }
 
 .w3-row{
-    margin-top: 1%;
-    margin-left:0% !important;
+    position: absolute;
+    margin-top:1%;
+    margin-left: 40%;
+    display:inline-block;
+    
+}
+.w3-row2{
+    position: absolute;
+    margin-top:1%;
+    margin-left: 46.5%;
+    display:inline-block;
+    
 }
   #Owns {background-color: #252422;}
   #Likes {background-color: #252422;}
