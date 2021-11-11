@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AtomicVein</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/homestyle.css">
+<link rel="stylesheet" href="css/logincss.css">
+<script src="https://kit.fontawesome.com/a28102fa79.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+		<header>		
+			<img class="logo" src = "images/logo.png" alt = "logo">
+			 <nav>
+				<ul class="nav_links">
+				   <li><a href = "index.html">Explore</a></li>
+				   <li><a href = "statistics.html">Statistics</a></li>
+				   <li><a href = "#">Your account</a></li>
+				</ul>
+			 </nav>
+			 <a class="cta" href = "#"><button class="button1" onclick="openFunction()">Wallet</button></a>
+			 
+			 <!-------------->
+  
+	 <!--Side login bar starts HERE-->
+	 <div id="menu" class = "sidemenu">
+ 
+ 
+		 <!--Top header-->
+  <b>Atomic Wallet</b>
+ 
+  <!-- form-->
+ 
+  <p class = "walletnotice"> Your wallet address is synced. Please key in your password to continue</p>
+ 
+ 
+  <form>
+	  <c> Password <samp>*</samp></c>
+	  <div class = "password">
+		  <input type = "password" name="password" required>
+	  </div>
+	  <!--login botton lul-->
+	   <input type = "submit" name = "login" class = "login" value = "login">
+ 
+	   <!--forgetti spaghetti-->
+	   <d href = "#" class ="forget">Forget Your Password?</d>
+ 
+  </form>
+ 
+ 
+		 <a href="#" class = "closebtn" onclick="closeFunction()"> &times;</a>
+	 </div>
+	 <script type = "text/javascript">
+		 function openFunction(){
+			 document.getElementById("menu").style.width="350px";
+			 document.getElementById("mainbox").style.marginLeft="300px";
+			 document.getElementById("mainbox").innerHTML="Click on Cross Element and Close Menu";
+		 }
+		 function closeFunction(){
+			 document.getElementById("menu").style.width="0px";
+			 document.getElementById("mainbox").style.marginLeft="0px";
+			 document.getElementById("mainbox").innerHTML="&#9776; Open";
+		 }
+	 </script>
+ 
+		  </header>
+
+		<main>
+					<div class="user-data full-width">
+						<div class="user-profile">
+							<div class="username-dt">
+								<div class="usr-pic">
+									<img src="images/avatar.jpg" alt="">
+								</div>
+							</div><!--username-dt end-->
+							<div class="user-specs">
+								<h3>Chad Squid</h3>
+								<span>ChadSquid, the chaddest of chad</span>
+							</div>
+						</div><!--user-profile end-->
+						<ul class="user-fw-status">
+							<li>
+								<h4>Following</h4>
+								<span>1.1K</span>
+							</li>
+							<li>
+								<h4>Followers</h4>
+								<span>111.1K</span>
+							</li>
+							<li>
+								<a href="#" title="">View Profile</a>
+							</li>
+						</ul>
+					</div><!--user-data end-->
+					<div class="suggestion full-width">
+						<div class="sd-title">
+							<h3>Suggestions</h3>
+						</div><!--sd-title end-->
+						<div class="suggestions-list">
+							<div class="suggestion-usd">
+								<img src="images/spongebob.jpg" alt="">
+								<div class="sgt-text">
+									<h4>Chad Sponge</h4>
+									<span>ChadBob, the chaddest of the chad</span>
+								</div>
+							
+							</div>
+							<div class="suggestion-usd">
+								<img src="images/nothisispatrick.jpg" alt="">
+								<div class="sgt-text">
+									<h4>Chad Star</h4>
+									<span>ChadStar, the chaddest of the chad</span>
+								</div>
+								
+							</div>
+							<div class="suggestion-usd">
+								<img src="images/crab.jpg" alt="">
+								<div class="sgt-text">
+									<h4>Chad Crab</h4>
+									<span>Chadcrab, the chaddest of the chad</span>
+								</div>
+							
+							</div>
+							<div class="suggestion-usd">
+								<img src="images/plankton.png" alt="">
+								<div class="sgt-text">
+									<h4>Chad Plankton</h4>
+									<span>ChadPlankton, the chaddest of th...</span>
+								</div>
+							
+							</div>
+							<div class="suggestion-usd">
+								<img src="images/garry.png" alt="">
+								<div class="sgt-text">
+									<h4>Chad Snail</h4>
+									<span>Chadsnail, the chaddest of the chad</span>
+								</div>
+							
+							</div>
+							<div class="suggestion-usd">
+								<img src="images/chocolate.jpg" alt="">
+								<div class="sgt-text">
+									<h4>Chocolate man</h4>
+									<span>Did somebody say chocolate?</span>
+								</div>
+							</div>
+						</div><!--suggestions-list end-->
+					</div><!--suggestions end-->									
+
+					<div class="post-topbar">
+						<div class="user-picy">
+							<img src="images/avatar.jpg" alt="">
+						</div>
+						<div class="comment_box">
+							<form>
+								<input type="text" placeholder="Post a comment">
+								<button type="submit">Send</button>
+							</form>
+						</div>
+						</div><!--post-st end-->
+					</div><!--post-topbar end-->
+						<div class="post-bar">
+							<div class="post_topbar">
+								<div class="usy-dt">
+									<div class="user-picy">
+										<img src="images/avatar.jpg" alt="">
+									</div>
+									<div class="usy-name">
+										<h3>Chad Squid</h3>
+										<span><img src="images/clock.png" alt="">3 min ago</span>
+									</div>
+								</div>
+								<div class="ed-opts">
+									<a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+									<ul class="ed-options">
+										<li><a href="#" title="">Edit Post</a></li>
+										<li><a href="#" title="">Unsaved</a></li>
+										<li><a href="#" title="">Unbid</a></li>
+										<li><a href="#" title="">Close</a></li>
+										<li><a href="#" title="">Hide</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="epi-sec">
+								<ul class="descp">
+									<li><img src="images/icon8.png" alt=""><span>Immortal</span></li>
+									<li><img src="images/icon9.png" alt=""><span>Bikini Bottom</span></li>
+								</ul>
+								<ul class="bk-links">
+									<li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
+									<li><a href="#" title=""><i class="la la-envelope"></i></a></li>
+								</ul>
+							</div>
+							<div class="job_descp">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="#" title="">view more</a></p>
+							</div>
+							<div class="job-status-bar">
+								<ul class="like-com">
+									<li><a href="#" title="" class="com"><img src="images/com.png" alt=""> Like 15</a></li>
+									<li><a href="#" title="" class="com"><img src="images/com.png" alt=""> Comment 15</a></li>
+								</ul>
+								<a><i class="la la-eye"></i>Views 50</a>
+							</div>
+						</div><!--post-bar end-->
+						<div class="top-profiles">
+							<div class="pf-hd">
+								<h3>Top NFTs</h3>
+								<i class="la la-ellipsis-v"></i>
+							</div>
+							<div class="profiles-slider">
+
+					<!--Fourth card-->
+					<ul class = "topnftcards4">
+						<div class = "topnftitemcontainer">
+						<div class = "topnftitembox">
+						
+						<!-- MODEL/IMAGE GOES HERE-->
+						<img src = "images/kaiju3.gif" class = "topnftitemimage">
+					
+					
+						<!--DETAILS GOES HERE-->
+						<div class = "topnftitemdetails">
+						
+						<!-- DETAILS of card -->
+						<p class="topnftitemproject"> KAIJUKINGZ </p>
+						<p class="topnftitempricetag"> PRICE</p>
+						<p class="topnftitemname"> KAIJUKINGZ #3</p>
+						<p class="topnftitemprice"><img src = "images/eth.svg" class = "topnftitempricelogo"> 14.4</p>
+					
+						</div>
+						<div class = "topnftitemlikesection">
+							<a class="topnftbuybuttontext" href = "#"><button class="topnftbutton3">View More</button></a>
+						
+							<img src = "images/heart.svg" class = "topnftitemlikelogo">
+							<p class="topnftitemlikes"> 99</p>
+					
+						
+						</div>
+						</div>
+						</div>
+						</ul>
+					
+					<!--Fifth card-->
+					<ul class = "topnftcards5">
+						<div class = "topnftitemcontainer">
+						<div class = "topnftitembox">
+					
+						<!-- MODEL/IMAGE GOES HERE-->
+						<img src = "images/cat2160.png" class = "topnftitemimage">
+					
+					
+						<!--DETAILS GOES HERE-->
+						<div class = "topnftitemdetails">
+					
+						<!-- DETAILS of card -->
+						<p class="topnftitemproject"> COOLCATS</p>
+						<p class="topnftitempricetag"> PRICE</p>
+						<p class="topnftitemname"> COOLCATS #2160 </p>
+						<p class="topnftitemprice"><img src = "images/eth.svg" class = "topnftitempricelogo"> 6.1</p>
+					
+						</div>
+						<div class = "topnftitemlikesection">
+							<a class="topnftbuybuttontext" href = "#"><button class="topnftbutton3">View More</button></a>
+						
+							<img src = "images/heart.svg" class = "topnftitemlikelogo">
+							<p class="topnftitemlikes"> 70</p>
+						</div>
+						</div>
+						</div>
+						</ul>
+
+					<!--Sixth card-->
+					<ul class = "topnftcards6">
+						<div class = "topnftitemcontainer">
+						<div class = "topnftitembox">
+						
+					
+						<!-- MODEL/IMAGE GOES HERE-->
+						<img src = "images/cat925.png" class = "topnftitemimage">
+					
+					
+						<!--DETAILS GOES HERE-->
+						<div class = "itemdetails">
+					
+						<!-- DETAILS of card -->
+						<p class="topnftitemproject"> COOLCATS</p>
+						<p class="topnftitempricetag"> PRICE</p>
+						<p class="topnftitemname"> COOLCATS #925 </p>
+						<p class="topnftitemprice"><img src = "images/eth.svg" class = "topnftitempricelogo"> 5.9</p>
+					
+						</div>
+						<div class = "topnftitemlikesection">
+							<a class="topnftbuybuttontext" href = "#"><button class="topnftbutton3">View More</button></a>
+						
+							<img src = "images/heart.svg" class = "topnftitemlikelogo">
+							<p class="topnftitemlikes"> 20</p>
+					
+						
+					
+						</div>
+						</div>
+						</div>
+						</ul>
+
+
+							</div><!--profiles-slider end-->
+						</div><!--top-profiles end-->
+						<div class="post-bar2">
+							<div class="post_topbar">
+								<div class="usy-dt">
+									<div class="user-picy">
+										<img src="images/avatar.jpg" alt="">
+									</div>
+									<div class="usy-name">
+										<h3>Chad Squid</h3>
+										<span><img src="images/clock.png" alt="">3 min ago</span>
+									</div>
+								</div>
+								<div class="ed-opts">
+									<a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+									<ul class="ed-options">
+										<li><a href="#" title="">Edit Post</a></li>
+										<li><a href="#" title="">Unsaved</a></li>
+										<li><a href="#" title="">Unbid</a></li>
+										<li><a href="#" title="">Close</a></li>
+										<li><a href="#" title="">Hide</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="epi-sec">
+								<ul class="descp">
+									<li><img src="images/icon8.png" alt=""><span>Epic Coder</span></li>
+									<li><img src="images/icon9.png" alt=""><span>Bikini Bottom</span></li>
+								</ul>
+							</div>
+							<div class="job_descp">
+								<p>2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna s... <a href="#" title="">view more</a></p>
+							</div>
+							<div class="job-status-bar">
+								<ul class="like-com">
+									<li><a href="#" title="" class="com"><img src="images/com.png" alt=""> Like 15</a></li>
+									<li><a href="#" title="" class="com"><img src="images/com.png" alt=""> Comment 15</a></li>
+								</ul>
+								<a><i class="la la-eye"></i>Views 50</a>
+							</div>
+						</div><!--post-bar end-->
+						
+							<div class="comment-section">
+								<div class="plus-ic">
+									<i class="la la-plus"></i>
+								</div>
+								<div class="comment-sec">
+									<ul>
+										<li>
+											<div class="comment-list">
+												<div class="bg-img">
+													<img src="http://via.placeholder.com/40x40" alt="">
+												</div>
+												<div class="comment">
+													<h3>Chad Squid</h3>
+													<span><img src="images/clock.png" alt=""> 3 min ago</span>
+													<p>Lorem ipsum dolor sit amet, </p>
+													<a href="#" title="" class="active"><i class="fa fa-reply-all"></i>Reply</a>
+												</div>
+											</div><!--comment-list end-->
+											<ul>
+												<li>
+													<div class="comment-list">
+														<div class="bg-img">
+															<img src="http://via.placeholder.com/40x40" alt="">
+														</div>
+														<div class="comment">
+															<h3>Chad Squid</h3>
+															<span><img src="images/clock.png" alt=""> 3 min ago</span>
+															<p>Hi John </p>
+															<a href="#" title=""><i class="fa fa-reply-all"></i>Reply</a>
+														</div>
+													</div><!--comment-list end-->
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="comment-list">
+												<div class="bg-img">
+													<img src="http://via.placeholder.com/40x40" alt="">
+												</div>
+												<div class="comment">
+													<h3>Chad Squid</h3>
+													<span><img src="images/clock.png" alt=""> 3 min ago</span>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at.</p>
+													<a href="#" title=""><i class="fa fa-reply-all"></i>Reply</a>
+												</div>
+											</div><!--comment-list end-->
+										</li>
+									</ul>
+								</div><!--comment-sec end-->
+								<div class="post-comment">
+									<div class="cm_img">
+										<img src="http://via.placeholder.com/40x40" alt="">
+									</div>
+									<div class="comment_box">
+										<form>
+											<input type="text" placeholder="Post a comment">
+											<button type="submit">Send</button>
+										</form>
+									</div>
+								</div><!--post-comment end-->
+							</div><!--comment-section end-->
+						</div><!--posty end-->
+					</div><!--posts-section end-->
+
+					
+					</div><!--widget-about end-->
+					<div class="widget widget-jobs">
+						<div class="sd-title">
+							<h3>Create and sell here!</h3>
+							<i class="la la-ellipsis-v"></i>
+						</div>
+
+					<!--seventh card-->
+					<ul class = "">
+						<div class = "itemcontainer3">
+						<div class = "itembox3">
+						
+						<!-- MODEL/IMAGE GOES HERE-->
+						<img src = "https://opensea.io/static/images/icons/nft.svg" class = "itemimage">
+					
+					
+						<!--DETAILS GOES HERE-->
+						<div class = "itemdetails">
+						
+						<!-- DETAILS of card -->
+						<p class="itemproject3"> To create </p>					
+						</div>
+						</div>
+						</div>
+						</ul>
+
+					<!--eighth card-->
+					<ul class = "">
+						<div class = "itemcontainer3">
+						<div class = "itembox3">
+						
+						<!-- MODEL/IMAGE GOES HERE-->
+						<img src = "https://opensea.io/static/images/icons/sale.svg" class = "itemimage">
+					
+					
+						<!--DETAILS GOES HERE-->
+						<div class = "itemdetails">
+						
+						<!-- DETAILS of card -->
+						<p class="itemproject3"> To Sell </p>					
+						</div>
+						</div>
+						</div>
+						</ul>
+						
+					<!--nineth card-->
+					<ul class = "">
+						<div class = "itemcontainer3">
+						<div class = "itembox3">
+						
+						<!-- MODEL/IMAGE GOES HERE-->
+						<img src = "https://opensea.io/static/images/icons/collection.svg" class = "itemimage">
+					
+					
+						<!--DETAILS GOES HERE-->
+						<div class = "itemdetails">
+						
+						<!-- DETAILS of card -->
+						<p class="itemproject3"> To Buy </p>					
+						</div>
+						</div>
+						</div>
+						</ul>	
+							</div><!--job-info end-->
+						</div><!--jobs-list end-->
+					</div><!--widget-jobs end-->
+
+
+					<div class="widget2 widget-jobs">
+						<div class="sd-title">
+							<h3>Resources that help</h3>
+							<i class="la la-ellipsis-v"></i>
+						</div>
+
+					<!--seventh card-->
+					<ul class = "">
+						<div class = "itemcontainer2">
+						<div class = "itembox2">
+						
+						<!-- MODEL/IMAGE GOES HERE-->
+						<img src = "https://opensea.io/blog/wp-content/uploads/2021/09/Untitled.png" class = "itemimage">
+					
+					
+						<!--DETAILS GOES HERE-->
+						<div class = "itemdetails">
+						
+						<!-- DETAILS of card -->
+						<p class="itemproject2"> 10 tips for avoiding scams and staying safe on the decentralized web </p>					
+						</div>
+						</div>
+						</div>
+						</ul>
+
+					<!--eighth card-->
+					<ul class = "">
+						<div class = "itemcontainer2">
+						<div class = "itembox2">
+						
+						<!-- MODEL/IMAGE GOES HERE-->
+						<img src = "https://opensea.io/blog/wp-content/uploads/2021/03/buy-nft-safely-on-opensea-1.png" class = "itemimage">
+					
+					
+						<!--DETAILS GOES HERE-->
+						<div class = "itemdetails">
+						
+						<!-- DETAILS of card -->
+						<p class="itemproject2"> Keeping yourself safe when buying NFTs on AtomicVein </p>					
+						</div>
+						</div>
+						</div>
+						</ul>
+						
+					<!--nineth card-->
+					<ul class = "">
+						<div class = "itemcontainer2">
+						<div class = "itembox2">
+						
+						<!-- MODEL/IMAGE GOES HERE-->
+						<img src = "https://opensea.io/blog/wp-content/uploads/2021/02/creating-selling-nfts.png" class = "itemimage">
+					
+					
+						<!--DETAILS GOES HERE-->
+						<div class = "itemdetails">
+						
+						<!-- DETAILS of card -->
+						<p class="itemproject2"> The beginner's guide to creating & selling digital art NFTs </p>					
+						</div>
+						</div>
+						</div>
+						</ul>	
+							</div><!--job-info end-->
+						</div><!--jobs-list end-->
+					</div><!--widget-jobs end-->	
+
+							</div>
+						</div><!--suggestions-list end-->
+					</div>
+		</main>
+		
+	<footer class = "footer">
+		<div class = "container">
+		   <div class ="row">
+			  <img class="logo2" src = "images/logo.png" alt = "logo2">
+			  <div class = "footer-col">
+
+			  
+
+				 <h4>Explore</h4>
+				 <ul>
+					<li><a href = "index.html">Explore</a></li>
+					<li><a href = "#">Buy and Sell</a></li>
+					<li><a href = "#">Trade</a></li>
+					<li><a href = "statistics.html">View statistics</a></li>
+				 </ul>
+			  </div>
+
+			  <div class = "footer-col">
+				 <h4>Developers</h4>
+				 <ul>
+					<li><a href = "#">NFT standard</a></li>
+					<li><a href = "#">Whitepaper</a></li>
+					<li><a href = "#">Dev groups</a></li>
+					<li><a href = "#">API</a></li>
+				 </ul>
+			  </div>
+
+			  <div class = "footer-col">
+				 <h4>Contact</h4>
+				 <ul>
+					<li><a href = "#">Facebook</a></li>
+					<li><a href = "#">Twitter</a></li>
+					<li><a href = "#">Instagram</a></li>
+					<li><a href = "#">GitHub</a></li>
+					<li><a href = "#">Discord</a></li>
+				 </ul>
+			  </div>
+		</div>
+
+	 </footer>
+
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="lib/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
