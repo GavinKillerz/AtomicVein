@@ -171,8 +171,9 @@ ul{
     display:flex;
     justify-content: center;
     align-items:center;
-    margin-top: 20%;
+    margin-top: 32%;
 }
+
 .itemcontainer button{
     font-family:"Montserrat", sans-serif;
     font-weight: 300;
@@ -350,7 +351,7 @@ ul{
 
 .project{
     width:100%;
-    height:800px;
+    height:650px;
     background-color: #252422;
     border-bottom-color:#202020;
     border-bottom-width: 5px;
@@ -388,7 +389,7 @@ ul{
     position: absolute;
     height:100px;
     width: 500px;
-    background-color:#252422;
+
 
     margin-left: 37%;
     margin-top: 14.5%;
@@ -401,13 +402,107 @@ ul{
     text-align: center;
 }
 .projectnameby{
+    margin-left: 35.5%;   
     font-family: calibri;
     font-weight: bold;
     color: #CCC5B9;
     font-size: 100%;
     text-align: center;
+    display: inline;
 }
 
+.projectnamehigh{
+    font-family: calibri;
+    font-weight: bold;
+    color: #EB5E28;
+    font-size: 100%;
+    text-align: center;
+    display: inline;
+}
+
+.projectitemssection{
+    position: absolute;
+    height:90px;
+    width: 135px;
+    border:#202020 3px solid;
+    margin-left: 35.57%;
+    margin-top: 20.5%; 
+}
+.projectownerssection{
+    position: absolute;
+    height:90px;
+    width: 135px;
+    border:#202020 3px solid;
+    margin-left: 42.5%;
+    margin-top: 20.5%; 
+}
+.projectfloorsection{
+    position: absolute;
+    height:90px;
+    width: 135px;
+    border:#202020 3px solid;
+    margin-left: 49.5%;
+    margin-top: 20.5%; 
+}
+.projectvolumesection{
+    position: absolute;
+    height:90px;
+    width: 135px;
+    border:#202020 3px solid;
+    margin-left: 56.47%;
+    margin-top: 20.5%; 
+}
+
+.projecttexttop{
+    margin-top:2%;
+    font-family: calibri;
+    font-weight: 400;
+    color: #CCC5B9;
+    font-size: 200%;
+    text-align: center;
+}
+
+.projecttextbot{
+    margin-top:2%;
+    font-family: calibri;
+    color: #EB5E28;
+    font-size: 100%;
+    text-align: center;
+}
+
+.projectinfosection{
+    position: absolute;
+    height:140px;
+
+    width: 600px;
+
+    margin-left: 33.8%;
+    margin-top: 26.5%;
+}
+
+.projectdescription{
+    font-family: calibri;
+    font-weight: bold;
+    color: #CCC5B9;
+    font-size: 100%;
+    text-align: center;
+  
+}
+
+.itemlogo{
+    width:20px;
+    margin-right: 5px;
+    height: auto;
+    display: inline-block!important;
+
+}
+.itemlogo2{
+    width:20px;
+    margin-right: 2px;
+    height: 120%;
+    display: inline-block!important;
+
+}
 .socialsection{
     width:280px;
     height: 50px;
@@ -439,7 +534,9 @@ ul{
     float:inline-start;
         }
 .fa {
+
     font-size: 30px!important;
+
     height: 50px;
     width: 50px;
     text-align: center;
@@ -450,12 +547,14 @@ ul{
 }
 
 .fa-facebook {
+    
     border:#202020 3px solid;
     color: #CCC5B9;
     padding-top: 7px;
   }
   
 .fa-twitter {
+  
     border:#202020 3px solid;
     color: #CCC5B9;
     padding-top: 7px;
@@ -463,6 +562,7 @@ ul{
 }
 
 .fa-instagram {
+
     border:#202020 3px solid;
     color: #CCC5B9;
     padding-top: 7px;
@@ -470,6 +570,7 @@ ul{
 }
   
 .fa-google {
+   
     border:#202020 3px solid;
     color: #CCC5B9;
     padding-top: 7px;
@@ -568,7 +669,7 @@ ul{
 .w3-row{
     position: absolute;
     margin-top:1%;
-    margin-left: 42.4%;
+    margin-left: 41%;
     display:inline-block;
     
 }
@@ -584,3 +685,35 @@ ul{
 }
   #Owns {background-color: #252422;}
   #Likes {background-color: #252422;}
+
+.select{
+    padding: 10px 20px;
+    color: #202020;
+    background-color: #CCC5B9;
+    border: 2px solid #202020;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: montserrat;
+    font-weight: bold;
+    margin-left:10%;
+    margin-top:5%;
+    margin-bottom: 3%;
+
+    appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points ="0,0 100,0 50,50" style="fill:%23EB5E28;"/></svg>');
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    padding-right: 30px;
+}
+
+.filters{
+    margin-top: 3.3%;
+    margin-left: 77.2%;
+    position: absolute;
+}
+
+

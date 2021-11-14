@@ -208,6 +208,13 @@ ul{
     width: 250px;
 
 }
+.itemlogo{
+    width:20px;
+    margin-right: 5px;
+    height: auto;
+    display: inline-block!important;
+
+}
 .itemproject{
     font-family: calibri;
     font-weight: bold;
@@ -613,7 +620,7 @@ ul{
 .w3-row{
     position: absolute;
     margin-top:1%;
-    margin-left: 42.4%;
+    margin-left: 41.2%;
     display:inline-block;
     
 }
