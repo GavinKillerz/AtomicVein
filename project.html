@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link rel="stylesheet" href="css/styleproject.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
       <link rel="stylesheet" href="css/logincss.css">
       <script src="https://kit.fontawesome.com/a28102fa79.js" crossorigin="anonymous"></script>
 
@@ -489,8 +490,110 @@
    <div class="bordersection2">
    </div>
    <!---put here please <3--->
-      
 
+
+      <p class = "average90">Average 12 month price</p>
+      <select class = "select">
+         <option value = "last24hours">Last 24 hours</option>
+         <option value = "last7days">Last 7 Days</option>
+         <option value = "last30days">Last 30 Days</option>
+         <option value = "alltime">All Time</option>
+     </select>
+
+      <div class = "activity">
+      <canvas id="chart02" style="width:100%;max-width:1450px; max-height:600px;margin-left:60px;margin-top:50px"></canvas>
+      <script>
+         var xValues = [0,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240];
+var yValues = [2,2,3,4,5,6,7,7,6,5,4,4,5,6,7,8,9,10,11,11,10,9];
+
+new Chart("chart02", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "#CCC5B9",
+      borderColor: "#EB5E28",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 1, max:12}}],
+    }
+  }
+});
+      </script>
+      </div>
+
+   
+    
+   <!--TABLE HERE-->
+   
+ 
+ 
+
+      <table class="content-table">
+          <thead>
+              <tr>
+                 <th></th>
+                 <th>Item</th>
+                 <th>Price</th>
+                 <th>Quantity</th>
+                 <th>From</th>
+                 <th>To</th>
+                 <th>Time</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                 <td><div class = minicon><i class="fas fa-shopping-cart"></i></div>Sale </td>
+                 <td>$30,537.11</td>
+                 <td><div class = minicon><i class="fab fa-ethereum"></i> </div>< 0.001</td>
+                 <td>in 20 hours</td>
+                 <td>Username</td>
+              </tr>
+
+              <tr>
+                  <td><div class = minicon><i class="fas fa-shopping-cart"></i></div>Sale </td>
+                 <td>$29,242.83</td>
+                 <td><div class = minicon><i class="fab fa-ethereum"></i> </div>< 0.001</td>
+                 <td>in 5 hours</td>
+                 <td>Username</td>
+              </tr>
+
+              <tr>
+                  <td><div class = minicon><i class="fas fa-shopping-cart"></i></div>Sale </td>
+                 <td>$29,196.60</td>
+                 <td><div class = minicon><i class="fab fa-ethereum"></i> </div>< 0.001</td>
+                 <td>in 3 hours</td>
+                 <td>Username</td>
+              </tr>
+
+              <tr>
+                  <td><div class = minicon><i class="fas fa-shopping-cart"></i></div>Sale </td>
+                 <td>$30,537.11</td>
+                 <td><div class = minicon><i class="fab fa-ethereum"></i> </div>< 0.001</td>
+                 <td>in 20 hours</td>
+                 <td>Username</td>
+              </tr>
+
+              <tr>
+                  <td><div class = minicon><i class="fas fa-shopping-cart"></i></div>Sale </td>
+                 <td>$30,537.11</td>
+                 <td><div class = minicon><i class="fab fa-ethereum"></i> </div>< 0.001</td>
+                 <td>in 20 hours</td>
+                 <td>Username</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+
+
+  
 
    <!---don't put your cock beyond here please <3-->
  </div>
