@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+ 
+      <meta charset="utf-8">
+      <title>AtomicVein</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="css/styleproject.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+      <link rel="stylesheet" href="css/logincss.css">
+      <script src="https://kit.fontawesome.com/a28102fa79.js" crossorigin="anonymous"></script>
+
+   </head>
+<body>
+
+         <header>
+           <img class="logo" src = "images/logo.png" alt = "logo">
+            <nav>
+               <ul class="nav_links">
+                  <li><a  href = "index.html">Explore</a></li>
+                  <li><a  href = "statistics.html">Statistics</a></li>
+                  <li><a  href = "profile.html">Your account</a></li>
+               </ul>
+            </nav>
+            <a class="cta" href = "#"><button class="button1" onclick="openFunction()">Wallet</button></a>
+
+            <!--Side login bar starts HERE-->
+    <div id="menu" class = "sidemenu">
+
+
+      <!--Top header-->
+<b>Atomic Wallet</b>
+
+<!-- form-->
+
+<p class = "walletnotice"> Your wallet address is synced. Please key in your password to continue</p>
+
+
+<form>
+   <c> Password <samp>*</samp></c>
+   <div class = "password">
+       <input type = "password" name="password" required>
+   </div>
+   <!--login botton lul-->
+    <input type = "submit" name = "login" class = "login" value = "login">
+
+    <!--forgetti spaghetti-->
+    <d href = "#" class ="forget">Forget Your Password?</d>
+
+</form>
+
+
+      <a href="#" class = "closebtn" onclick="closeFunction()"> &times;</a>
+  </div>
+  <script type = "text/javascript">
+      function openFunction(){
+          document.getElementById("menu").style.width="350px";
+          document.getElementById("mainbox").style.marginLeft="300px";
+          document.getElementById("mainbox").innerHTML="Click on Cross Element and Close Menu";
+      }
+      function closeFunction(){
+          document.getElementById("menu").style.width="0px";
+          document.getElementById("mainbox").style.marginLeft="0px";
+          document.getElementById("mainbox").innerHTML="&#9776; Open";
+      }
+  </script>
+            
+            
+         </header>
+         <!--Profile-->
+      
+         <div class ="project">
+
+          
+            <div class = "projectphoto">
+               <img src="images/coolbanner.png" alt="Project" class="banner">
+               <img src="images/catproject.png" alt="Avatar" class="avatar">
+               <div class ="socialsection">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a> 
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-google"></a> 
+               </div>
+               <div class = "projectsection">
+                  <p class = "projectname">
+                     COOL CATS
+                  </p>
+                  <p class = "projectnameby">
+                     Created By <p class ="projectnamehigh"> Cool-Cats</p>
+                  </p>
+               </div>
+               <div class ="projectitemssection">
+                  <p class ="projecttexttop">9.9k</p>
+                  <p class ="projecttextbot">Items</p>
+               </div>
+               <div class ="projectownerssection">
+                  <p class ="projecttexttop">5.0k</p>
+                  <p class ="projecttextbot">Owners</p>
+               </div>
+               <div class ="projectfloorsection">
+                  <p class ="projecttexttop"><img src = "images/etho.svg" class = "itemlogo2">5.791</p>
+                  <p class ="projecttextbot">Floor Price</p>
+               </div>
+               <div class ="projectvolumesection">
+                  <p class ="projecttexttop"><img src = "images/etho.svg" class = "itemlogo2">56.7k</p>
+                  <p class ="projecttextbot">Volume Traded</p>
+               </div>
+               <div class="projectinfosection">
+                  <p class = "projectdescription">
+                     Cool Cats is a collection of 9,999 randomly generated and stylistically 
+                     curated NFTs that exist on the Ethereum Blockchain. Cool Cat holders can participate 
+                     in exclusive events such as NFT claims, raffles, community giveaways, and more. Remember, 
+                     all cats are cool, but some are cooler than others.ompany them.
+                  </p>
+               </div>
+              
+         
+         </div>
+         </div>   
+
+
+
+
+
+
+         
+         <!--Collection-->
+      
+      
+<div class="w3-container">
+
+   
+      <div class="w3-row">
+      <a id="defaultOpen" href="javascript:void(0)" onclick="openCity(event, 'Collection');">
+        <div class="tablink w3-bottombar"><img src = "images/item.svg" class = "itemlogo">Items</div>
+      </a>
+   </div>
+  <div class="w3-row2">
+        
+         <a href="javascript:void(0)" onclick="openCity(event, 'Like');">
+           <div class="tablink w3-bottombar  "><img src = "images/activity.svg" class = "itemlogo">Activity</div>
+         </a>
+      
+     </div>
+</div>
+
+
+<div id="Collection" class="w3-container city" style="display:none">
+
+   <div class="filters">
+      
+      <select class = "select">
+         <option value = "popularitems">Popular Items</option>
+         <option value = "recentlylisted">Recently Listed</option>
+   
+     </select>
+   </div>
+  
+   <div class="bordersection">
+    
+   </div>
+   <div class="bordersection2">
+
+   </div>
+   <div class="itemsection">
+
+   
+      <ul class = "cards4">
+         <div class = "itemcontainer">
+            <div class = "itembox">
+      
+      
+            <!-- MODEL/IMAGE GOES HERE-->
+            <img src = "images/cat8800.png" class = "itemimage">
+      
+      
+            <!--DETAILS GOES HERE-->
+            <div class = "itemdetails">
+      
+            <!-- DETAILS of card -->
+            <p class="itemproject"><a href = "projectcool.html">  COOLCATS</p>
+            <p class="itempricetag"> PRICE</p>
+            <p class="itemname"> COOLCATS #8800 </p>
+            <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 14</p>
+      
+            </div>
+            <div class = "itemlikesection">
+               <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+            
+               <img src = "images/heart.svg" class = "itemlikelogo">
+               <p class="itemlikes"> 74</p>
+      
+         
+      
+            </div>
+            </div>
+            </div>
+         </ul>
+      
+   
+      <ul class = "cards5">
+         <div class = "itemcontainer">
+            <div class = "itembox">
+      
+            <!-- MODEL/IMAGE GOES HERE-->
+            <img src = "images/cat2160.png" class = "itemimage">
+      
+      
+            <!--DETAILS GOES HERE-->
+            <div class = "itemdetails">
+      
+            <!-- DETAILS of card -->
+            <p class="itemproject"><a href = "projectcool.html">  COOLCATS</p>
+            <p class="itempricetag"> PRICE</p>
+            <p class="itemname"> COOLCATS #2160 </p>
+            <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 6.1</p>
+      
+            </div>
+            <div class = "itemlikesection">
+               <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+            
+               <img src = "images/heart.svg" class = "itemlikelogo">
+               <p class="itemlikes"> 70</p>
+            </div>
+            </div>
+            </div>
+         </ul>
+   
+         <!--Sixth card-->
+         <ul class = "cards6">
+            <div class = "itemcontainer">
+               <div class = "itembox">
+             
+         
+               <!-- MODEL/IMAGE GOES HERE-->
+               <img src = "images/cat2566.png" class = "itemimage">
+         
+         
+               <!--DETAILS GOES HERE-->
+               <div class = "itemdetails">
+          
+               <!-- DETAILS of card -->
+               <p class="itemproject"><a href = "projectcool.html">  COOLCATS</p>
+               <p class="itempricetag"> PRICE</p>
+               <p class="itemname"> COOLCATS #925 </p>
+               <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 6.11</p>
+         
+               </div>
+               <div class = "itemlikesection">
+                  <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+               
+                  <img src = "images/heart.svg" class = "itemlikelogo">
+                  <p class="itemlikes"> 33</p>
+         
+             
+         
+               </div>
+               </div>
+               </div>
+            </ul>
+   
+            <ul class = "cards7">
+               <div class = "itemcontainer">
+                  <div class = "itembox">
+            
+            
+                  <!-- MODEL/IMAGE GOES HERE-->
+                  <img src = "images/cat6133.png" class = "itemimage">
+            
+            
+                  <!--DETAILS GOES HERE-->
+                  <div class = "itemdetails">
+            
+                  <!-- DETAILS of card -->
+                  <p class="itemproject"><a href = "projectcool.html">  COOLCATS</p>
+                  <p class="itempricetag"> PRICE</p>
+                  <p class="itemname"> COOLCATS #6133 </p>
+                  <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 7</p>
+            
+                  </div>
+                  <div class = "itemlikesection">
+                     <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+                  
+                     <img src = "images/heart.svg" class = "itemlikelogo">
+                     <p class="itemlikes"> 31</p>
+            
+               
+            
+                  </div>
+                  </div>
+                  </div>
+         </ul>
+   
+         <ul class = "cards8">
+            <div class = "itemcontainer">
+               <div class = "itembox">
+         
+         
+               <!-- MODEL/IMAGE GOES HERE-->
+               <img src = "images/cat3300.png" class = "itemimage">
+         
+         
+               <!--DETAILS GOES HERE-->
+               <div class = "itemdetails">
+         
+               <!-- DETAILS of card -->
+               <p class="itemproject"><a href = "projectcool.html">  COOLCATS</p>
+               <p class="itempricetag"> PRICE</p>
+               <p class="itemname"> COOLCATS #3300 </p>
+               <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 10.5</p>
+         
+               </div>
+               <div class = "itemlikesection">
+                  <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+               
+                  <img src = "images/heart.svg" class = "itemlikelogo">
+                  <p class="itemlikes"> 84</p>
+         
+            
+         
+               </div>
+               </div>
+               </div>
+      </ul>
+     <!--Fourth card-->
+   <ul class = "cards4">
+      <div class = "itemcontainer">
+         <div class = "itembox">
+         
+         <!-- MODEL/IMAGE GOES HERE-->
+         <img src = "images/cat4278.png" class = "itemimage">
+   
+   
+         <!--DETAILS GOES HERE-->
+         <div class = "itemdetails">
+         
+         <!-- DETAILS of card -->
+         <p class="itemproject"><a href = "projectcool.html">  COOLCATS</p>
+         <p class="itempricetag"> PRICE</p>
+         <p class="itemname"> COOLCATS #4278</p>
+         <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 6.4</p>
+   
+         </div>
+         <div class = "itemlikesection">
+            <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+         
+            <img src = "images/heart.svg" class = "itemlikelogo">
+            <p class="itemlikes"> 99</p>
+   
+        
+         </div>
+         </div>
+         </div>
+      </ul>
+   
+      <!--Fifth card-->
+   <ul class = "cards5">
+      <div class = "itemcontainer">
+         <div class = "itembox">
+   
+         <!-- MODEL/IMAGE GOES HERE-->
+         <img src = "images/cat925.png" class = "itemimage">
+   
+   
+         <!--DETAILS GOES HERE-->
+         <div class = "itemdetails">
+   
+         <!-- DETAILS of card -->
+         <p class="itemproject"><a href = "projectcool.html">  COOLCATS</p>
+         <p class="itempricetag"> PRICE</p>
+         <p class="itemname"> COOLCATS #925</p>
+         <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 5.9</p>
+   
+         </div>
+         <div class = "itemlikesection">
+            <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+         
+            <img src = "images/heart.svg" class = "itemlikelogo">
+            <p class="itemlikes"> 20</p>
+         </div>
+         </div>
+         </div>
+      </ul>
+   
+         <!--Sixth card-->
+   <ul class = "cards6">
+      <div class = "itemcontainer">
+         <div class = "itembox">
+       
+   
+         <!-- MODEL/IMAGE GOES HERE-->
+         <img src = "images/cat1310.png" class = "itemimage">
+   
+   
+         <!--DETAILS GOES HERE-->
+         <div class = "itemdetails">
+    
+         <!-- DETAILS of card -->
+         <p class="itemproject"><a href = "projectcool.html">  COOLCATS</p>
+         <p class="itempricetag"> PRICE</p>
+         <p class="itemname"> COOLCATS #1310</p>
+         <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 7.34</p>
+   
+         </div>
+         <div class = "itemlikesection">
+            <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+         
+            <img src = "images/heart.svg" class = "itemlikelogo">
+            <p class="itemlikes"> 45</p>
+   
+       
+   
+         </div>
+         </div>
+         </div>
+      </ul>
+   
+         <!--Seventh card-->
+   <ul class = "cards7">
+      <div class = "itemcontainer">
+         <div class = "itembox">
+   
+   
+         <!-- MODEL/IMAGE GOES HERE-->
+         <img src = "images/cat1490.png" class = "itemimage">
+   
+   
+         <!--DETAILS GOES HERE-->
+         <div class = "itemdetails">
+   
+         <!-- DETAILS of card -->
+         <p class="itemproject"><a href = "projectcool.html">  COOLCATS</p>
+         <p class="itempricetag"> PRICE</p>
+         <p class="itemname"> COOLCATS #1490</p>
+         <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 11.1</p>
+   
+         </div>
+         <div class = "itemlikesection">
+            <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+         
+            <img src = "images/heart.svg" class = "itemlikelogo">
+            <p class="itemlikes"> 84</p>
+   
+      
+   
+         </div>
+         </div>
+         </div>
+      </ul>
+   
+         <ul class = "cards8">
+            <div class = "itemcontainer">
+               <div class = "itembox">
+         
+         
+               <!-- MODEL/IMAGE GOES HERE-->
+               <img src = "images/cat8875.png" class = "itemimage">
+         
+         
+               <!--DETAILS GOES HERE-->
+               <div class = "itemdetails">
+         
+               <!-- DETAILS of card -->
+               <p class="itemproject"><a href = "projectcool.html">  COOLCATS</p>
+               <p class="itempricetag"> PRICE</p>
+               <p class="itemname"> COOLCATS #8875 </p>
+               <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 6.72</p>
+         
+               </div>
+               <div class = "itemlikesection">
+                  <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+               
+                  <img src = "images/heart.svg" class = "itemlikelogo">
+                  <p class="itemlikes"> 27</p>
+         
+            
+         
+               </div>
+               </div>
+               </div>
+      </ul>   
+   </div>
+ </div>
+
+ <div id="Like" class="w3-container city" style="display:none">
+   
+    <div class="bordersection">  
+   </div>
+   <div class="bordersection2">
+   </div>
+   <!---put here please <3--->
+
+
+      <p class = "average90">Average 12 month price</p>
+      <select class = "select">
+         <option value = "last24hours">Last 24 hours</option>
+         <option value = "last7days">Last 7 Days</option>
+         <option value = "last30days">Last 30 Days</option>
+         <option value = "alltime">All Time</option>
+     </select>
+
+      <div class = "activity">
+      <canvas id="chart02" style="width:100%;max-width:1450px; max-height:600px;margin-left:60px;margin-top:50px"></canvas>
+      <script>
+         var xValues = [0,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240];
+var yValues = [2,2,3,4,5,6,7,7,6,5,4,4,5,6,7,8,9,10,11,11,10,9];
+
+new Chart("chart02", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "#CCC5B9",
+      borderColor: "#EB5E28",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 1, max:12}}],
+    }
+  }
+});
+      </script>
+      </div>
+
+   
+    
+   <!--TABLE HERE-->
+   
+ 
+ 
+
+      <table class="content-table">
+          <thead>
+              <tr>
+                 <th></th>
+                 <th>Item</th>
+                 <th>Price</th>
+                 <th>Quantity</th>
+                 <th>From</th>
+                 <th>To</th>
+                 <th>Time</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                 <td><div class = minicon><i class="fas fa-shopping-cart"></i></div>Sale </td>
+                 <td>$30,537.11</td>
+                 <td><div class = minicon><i class="fab fa-ethereum"></i> </div>< 0.001</td>
+                 <td>in 20 hours</td>
+                 <td>Username</td>
+              </tr>
+
+              <tr>
+                  <td><div class = minicon><i class="fas fa-shopping-cart"></i></div>Sale </td>
+                 <td>$29,242.83</td>
+                 <td><div class = minicon><i class="fab fa-ethereum"></i> </div>< 0.001</td>
+                 <td>in 5 hours</td>
+                 <td>Username</td>
+              </tr>
+
+              <tr>
+                  <td><div class = minicon><i class="fas fa-shopping-cart"></i></div>Sale </td>
+                 <td>$29,196.60</td>
+                 <td><div class = minicon><i class="fab fa-ethereum"></i> </div>< 0.001</td>
+                 <td>in 3 hours</td>
+                 <td>Username</td>
+              </tr>
+
+              <tr>
+                  <td><div class = minicon><i class="fas fa-shopping-cart"></i></div>Sale </td>
+                 <td>$30,537.11</td>
+                 <td><div class = minicon><i class="fab fa-ethereum"></i> </div>< 0.001</td>
+                 <td>in 20 hours</td>
+                 <td>Username</td>
+              </tr>
+
+              <tr>
+                  <td><div class = minicon><i class="fas fa-shopping-cart"></i></div>Sale </td>
+                 <td>$30,537.11</td>
+                 <td><div class = minicon><i class="fab fa-ethereum"></i> </div>< 0.001</td>
+                 <td>in 20 hours</td>
+                 <td>Username</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+
+
+  
+
+   <!---don't put your cock beyond here please <3-->
+ </div>
+
+ 
+</div>
+
+<script>
+   function openCity(evt, tabName) {
+     var i, x, tablinks;
+     x = document.getElementsByClassName("city");
+     for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+     }
+     tablinks = document.getElementsByClassName("tablink");
+     for (i = 0; i < x.length; i++) {
+       tablinks[i].className = tablinks[i].className.replace(" w3-border-orange", "");
+     }
+     document.getElementById(tabName).style.display = "block";
+     evt.currentTarget.firstElementChild.className += " w3-border-orange";
+   }
+   document.getElementById("defaultOpen").click();
+   </script>
+            
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <footer class = "footer">
+            <div class = "container">
+               <div class ="row">
+                  <img class="logo2" src = "images/logo.png" alt = "logo2">
+                  <div class = "footer-col">
+
+                  
+
+                     <h4>Explore</h4>
+                     <ul>
+                        <li><a href = "index.html">Explore</a></li>
+                        <li><a href = "#">Buy and Sell</a></li>
+                        <li><a href = "#">Trade</a></li>
+                        <li><a href = "statistics.html">View statistics</a></li>
+                     </ul>
+                  </div>
+
+                  <div class = "footer-col">
+                     <h4>Developers</h4>
+                     <ul>
+                        <li><a href = "#">NFT standard</a></li>
+                        <li><a href = "#">Whitepaper</a></li>
+                        <li><a href = "#">Dev groups</a></li>
+                        <li><a href = "#">API</a></li>
+                     </ul>
+                  </div>
+
+                  <div class = "footer-col">
+                     <h4>Contact</h4>
+                     <ul>
+                        <li><a href = "#">Facebook</a></li>
+                        <li><a href = "#">Twitter</a></li>
+                        <li><a href = "#">Instagram</a></li>
+                        <li><a href = "#">GitHub</a></li>
+                        <li><a href = "#">Discord</a></li>
+                     </ul>
+                  </div>
+            </div>
+
+         </footer>
+      </body>
+</html>
+
+
+      
