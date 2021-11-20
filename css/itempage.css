@@ -487,7 +487,7 @@ input[type=text], input[type=password] {
       position: relative;
       margin-top: 0;
       margin-left: 57%;
-      bottom: 32%;
+      bottom: 27%;
   }
   .buttoncontains{
     margin-left: 19%;
@@ -495,11 +495,11 @@ input[type=text], input[type=password] {
       margin-top: 0%;
       height: 100px;
       width: 100px; 
-      bottom:20px;
+      bottom:0;
   }
 
   .buttoncontains2{
-    bottom: 120px;
+    bottom: 100px;
     position: relative;
     margin-left: 55%;
     height: 100px;
