@@ -718,7 +718,7 @@ ul{
 }
 
 .filters{
-    margin-top: 3.3%;
+    margin-top: 2.3%;
     margin-left: 77.2%;
     position: absolute;
 }
@@ -767,6 +767,7 @@ ul{
     padding-right: 30px;
 }
 
+
 .average90{
     position:absolute;
     font-family: montserrat;
@@ -809,7 +810,7 @@ ul{
 
 .content-table th,
 .content-table td{
-    padding: 30px 75px;
+    padding: 30px 85px;
 }
 
 .content-table thead tr{
@@ -844,15 +845,4 @@ ul{
     margin-right:5px;
     color: #EB5E28;
     font-size:18px;
-}
-
-.avatar2 {
-    vertical-align: middle;
-    width: 40px;
-    height: auto;
-    margin-right: 2px;
-    border-radius: 50%;
-    border: 3px solid #252422;
-    bottom:1px;
-    position: relative; 
 }

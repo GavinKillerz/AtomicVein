@@ -44,7 +44,7 @@
     margin-top: 190px;
     font-family: montserrat;
     font-weight: 500;
-    color:#CCC5B9;
+    color:#EB5E28;
     font-size: 15px;
     position: absolute;
     width: 45%;
@@ -55,6 +55,8 @@
     float:right;
 }
 
+
+
 .offersbox{
     position:absolute;
     width: 755px;
@@ -63,6 +65,11 @@
     border-radius: 8px;
     margin-left: 835px;
     margin-top: -240px;
+    font-family:"Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #CCC5B9;
+    text-decoration: none;
 }
 
 .highestoffer{
@@ -90,20 +97,38 @@
     width: 300px;
     height: 50px;
     background-color:#EB5E28;
-    border-radius: 15px;
-    margin-left: 50px;
-    margin-top: 18px;
+    border: none;
+    margin-left: 6%;
+    margin-top:2.8%;
+    float:right;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 
 }
 
-.makeyouroffer{
-    font-family: calibri;
-    font-weight: 500;
-    color: #CCC5B9;
+.makeyourofferbox p{
+    font-family:"Montserrat", sans-serif;
+    font-weight: bold;
     font-size: 20px;
-    text-align: left;
-    margin-top: 10px;
     text-align: center;
+    color: #CCC5B9;
+    text-decoration: none;
+
+    padding: 0px !important;
+}
+
+
+.makeyourofferbox:hover{
+    background-color: rgba(235,94,40,0.8)
+}
+
+.makeyouroffer{
+    font-family:"Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #CCC5B9;
+    text-decoration: none;
 }
 
 .pricehistory{
@@ -301,4 +326,5 @@
     color: #EB5E28;
     font-size:25px;
 }
+
 
