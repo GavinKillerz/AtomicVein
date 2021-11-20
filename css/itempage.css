@@ -428,8 +428,8 @@ input[type=text], input[type=password] {
     margin: 17% auto 17% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 2px solid #EB5E28;
     border-radius: 8px;
-    width: 35%; 
-    height: 35%; /* Could be more or less, depending on screen size */
+    width: 683px; 
+    height: 504px; /* Could be more or less, depending on screen size */
     margin-left: 30;
    
   }
