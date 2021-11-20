@@ -12,6 +12,7 @@
       
 
    </head>
+   
 <body>
     
 
@@ -91,13 +92,15 @@
         <div class = icon><i class="fab fa-ethereum"></i></div> 
         <p class = "highestoffer">Highest Offer</p>
         <p class = "currenthighest">7.333 ($30,537.11)</p>
-        <div class = "makeyourofferbox">
-            <p class = "makeyouroffer">Make offer</p>
+    
+            <button class ="makeyourofferbox" onclick="document.getElementById('id01').style.display='block'" ><p>Make offer</p></button>
 
-        </div>
+    
+         
 
 
     </div>
+
 
     <div class = "pricehistory">
         <div class = icon><i class="fas fa-chart-line"></i></div> 
@@ -292,3 +295,32 @@
          </footer>
       </body>
 </html>
+
+<div id="id01" class="modal">
+  
+   <span onclick="document.getElementById('id01').style.display='none'"
+                 class="close" title="Close">&times;</span>
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php">
+           
+       
+        <h1> Make an Offer </h1>
+
+        <div class ="imagecontainer">
+        <img class="itemphoto2" src = "images/kaiju0.gif" alt = "itemphoto"> </div>
+            <div class="offerm">
+                <div class="offerbox">
+                <label for="offer">
+                    <div class = icon style = "right:290px"><i class="fab fa-ethereum"></i></div>
+                <b>Please Key in your offer</b></label>
+                 </div>
+                <input type="number" class="numinput" placeholder="ETH" name="offer" min="0.01" step=".01" required>
+            </div>
+          <div class="buttoncontains">
+            <button type="submit" >Make Offer</button>
+        </div>
+        <div class="buttoncontains2">
+            <button type="button"  onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel Offer</button>
+        </div>
+        </form>
+     
