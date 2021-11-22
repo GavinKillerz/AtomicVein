@@ -1,10 +1,18 @@
 <?php
+    error_reporting(E_ALL ^ E_WARNING); 
     $servername = "127.0.0.1";
     $username = "root";
     $password = "";
-    $dbname = "phpmysqli";
+    $dbname = "test";
     $handler = mysqli_connect($servername, $username, $password, $dbname);
+    $user2 = 'Username';
+    $user1 = 'ChadSquid';
+    $ownership = $_POST['gay'];
 ?>
+
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +38,7 @@
                <ul class="nav_links">
                   <li><a href = "index.html">Explore</a></li>
                   <li><a href = "statistics.html">Statistics</a></li>
-                  <li><a href = "profile.html">Your account</a></li>
+                  <li><a href = "profile.php">Your account</a></li>
                </ul>
             </nav>
 
@@ -93,17 +101,42 @@
 
     <p class="itemname">Item title name #6969</p>
 
-    <p class="owner">Owned by 'Username'</p>
+    
+    <?php
+    if( $ownership == 1 ) {
+    ?>
+    <p class="owner">Owned by <?php echo $user1?></p>
+
+    <?php } 
+    else { ?>
+
+        <p class="owner">Owned by <?php echo $user2?></p>
+
+    <?php } ?>
+
+   
 
     <div class = "offersbox">
  
         <div class = icon><i class="fab fa-ethereum"></i></div> 
-        <p class = "highestoffer">Highest Offer</p>
+        <p class = "highestoffer">Current Price</p>
         <p class = "currenthighest">7.333 ($30,537.11)</p>
     
-            <button class ="makeyourofferbox" onclick="document.getElementById('id01').style.display='block'" ><p>Make offer</p></button>
+        <?php
+    if( $ownership == 1 ) {
+    ?>
+     <button class ="makeyourofferbox" onclick="document.getElementById('id01').style.display='block'" ><p>List Price</p></button>
+        
+    <?php } 
+    else { ?>
 
-    
+<button class ="makeyourofferbox" onclick="document.getElementById('id01').style.display='block'" ><p>Make offer</p></button>
+
+    <?php } ?>
+
+        
+
+   
          
 
 
@@ -282,6 +315,16 @@
       </body>
 </html>
 
+<?php
+    if( $ownership == 1 ) {
+    ?>
+    
+     <script>alert("Purchase Successful")</script>
+     
+        
+    <?php } 
+    else { }?>
+    
 <div id="id01" class="modal">
   
    <span onclick="document.getElementById('id01').style.display='none'"
@@ -310,3 +353,6 @@
         </div>
         </form>
      
+       
+
+        

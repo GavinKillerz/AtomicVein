@@ -176,9 +176,13 @@
     vertical-align: middle;
     width: 40px;
     height: auto;
-    float:left;
+    float: left;
     border-radius: 50%;
     border: 5px solid #252422;
-    bottom:1px;
+    bottom:8px;
     position: relative; 
+}
+
+.text{
+
 }
