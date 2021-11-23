@@ -108,7 +108,7 @@
                      <p class ="salec"> 3 </p>     
                </div>
                <div class ="editsection">
-                  <a class="cta" href = "#"><button class="editbutton">Edit Profile</button></a>
+                  <a class="cta"><button class="editbutton"  onclick="document.getElementById('id01').style.display='block'">Edit Profile</button></a>
                </div>
             </div>
          
@@ -884,3 +884,39 @@
 
 
       
+<div id="id01" class="modal">
+  
+   <span onclick="document.getElementById('id01').style.display='none'"
+                 class="close" title="Close">&times;</span>
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php">
+           
+       
+        <h1> Edit Your Profile </h1>
+
+    
+       
+            <div class="offerm">
+                <div class="offerbox">
+                <label for="name">
+                <b>Edit Name</b></label>
+                <input type="text" placeholder="Chad Squid" name="name" required>
+                <label for="tag">
+                 <b>Edit Tag</b></label>
+                  <input type="text" c placeholder="@chadsquidds" name="tag" required>
+                  <label for="offer">
+                  <b>Edit Bio</b></label>
+                  <input type="text" c placeholder="Hi I'm Chad Squid..." name="bio" required>
+                 </div>
+             
+                
+            </div>
+           
+          <div class="buttoncontains">
+            <button type="submit" class="acceptbutton" >Make Edit</button>
+        </div>
+        <div class="buttoncontains2">
+            <button type="button"  onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel Edit</button>
+        </div>
+        </form>
+     

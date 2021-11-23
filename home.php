@@ -1,3 +1,6 @@
+<?php
+$mhmyes = 0;
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -159,7 +162,8 @@
 						</div>
 					</div><!--writestatuscard end-->
 
-
+					<?php
+                                if ($_SERVER["REQUEST_METHOD"] == "POST") { $mhmyes = 1 ?>
 						<div class="userpostcard">
 							<div class="userpostcard-tophead">
 								<div class="userpostcard-pfp">
@@ -167,8 +171,8 @@
 										<img src="images/avatar.jpg" alt="">
 									</div>
 									<div class="userpostcard-topdetails">
-										<h3>Chad Sponge</h3>
-										<span><img src="images/clock.png" alt="">10 min ago</span>
+										<h3>Chad Squid</h3>
+										<span><img src="images/clock.png" alt="">0 min ago</span>
 									</div>
 								</div>
 							</div>
@@ -190,6 +194,41 @@
                                     }
                                   }
                                   ?></p>
+								  </div>
+							<div class="userpostcard-bottombar">
+								<ul class="userpostcard-likecomment">
+									<li><a href="#" title="" class="com"><img src="images/com.png" alt=""> Like 0</a></li>
+									<li><a href="#" title="" class="com"><img src="images/com.png" alt=""> Comment 0</a></li>
+								</ul>
+								<a>Views 1</a>
+							</div>
+						</div><!--userpostcard end-->
+								<?php	} ?>
+
+								<?php
+                                if ($mhmyes == 0 ) {?>
+								
+						
+						<div class="userpostcard">
+							<div class="userpostcard-tophead">
+								<div class="userpostcard-pfp">
+									<div class="users-pfp">
+										<img src="images/spongebob.jpg" alt="">
+									</div>
+									<div class="userpostcard-topdetails">
+										<h3>Chad Sponge</h3>
+										<span><img src="images/clock.png" alt="">10 min ago</span>
+									</div>
+								</div>
+							</div>
+							<div class="userpostcard-rankinglocation">
+								<ul class="userpostcard-RL-details">
+									<li><img src="images/icon8.png" alt=""><span>Radiant</span></li>
+									<li><img src="images/icon9.png" alt=""><span>Bikini Bottom</span></li>
+								</ul>
+							</div>
+							<div class="userpostcard-postext">
+								<p>Hello World BAHAHAHHAHAAHAHAHAHAHHAA!!!! LFG! LFG! WOOP WOOP SPONGEBOB SQUARE PANTS SPONGEBOB SQUARE PANTS!!!!!</p>
 							</div>
 							<div class="userpostcard-bottombar">
 								<ul class="userpostcard-likecomment">
@@ -198,7 +237,9 @@
 								</ul>
 								<a>Views 20</a>
 							</div>
-						</div><!--userpostcard end-->
+						</div>
+
+						<?php	} ?>
 
 
 						<div class="topnftscard">
@@ -375,21 +416,52 @@
 											</div>
 										</li>
 									</ul>
+									<?php error_reporting(E_ALL ^ E_WARNING); 
+                                if ($_GET['rname']) { ?>
+						
+						<div class="postcommentcard-details">
+												<div class="postcommentcard-background">
+													<img src="images/avatar.jpg" alt="">
+												</div>
+												<div class="postcommentcard-commentdetails">
+													<h3>Chad Squid</h3>
+													<span><img src="images/clock.png" alt=""> 0 min ago</span>
+													<p>
+								<?php
+                                if ($_GET['rname']) {
+
+									
+                                    // collect value of input field
+                                    $reply = $_GET['rname'];
+                                    if (empty($reply)) {
+                                      echo "Name is empty";
+                                    } else {
+                                      echo $reply;
+                                    }
+                                  }
+                                  ?></p>
+													<a href="#" title=""><i class="fa fa-reply-all"></i>Reply</a>
+												</div>
+											</div>
+										</li>
+									</ul>
+
+								<?php	} ?>	
 
 								<div class="post-postcommentcard-commentdetails">
 									<div class="users-pfp">
 										<img src="images/avatar.jpg" alt="">
 									</div>
 									<div class="postcommentcard-commentbox">
-										<form>
-											<input type="text" placeholder="Post a comment">
-											<button type="submit">Send</button>
-										</form>
+								<form method="GET" action="<?php echo $_SERVER['PHP_SELF'];?>">
+								<input type="text" placeholder="Your thoughts?" name="rname">
+								<button type="submit">Send</button>
+								</form>
 									</div>
 								</div>
 							</div><!--postcommentcard end-->
 
-
+									
 					<div class="resourcesthathelpcard">
 						<div class="cardheadding">
 							<h3>Resources that help</h3>
