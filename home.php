@@ -92,7 +92,7 @@ $mhmyes = 0;
 								<span>111.1K</span>
 							</li>
 							<li>
-								<a href="#" title="">View Profile</a>
+								<a href="profile.php" title="">View Profile</a>
 							</li>
 						</ul>
 					</div><!--profilecard-data end-->
@@ -270,7 +270,7 @@ $mhmyes = 0;
 					
 						</div>
 						<div class = "topnftitemlikesection">
-							<a class="topnftbuybuttontext" href = "#"><button class="topnftbutton3">View More</button></a>
+							<a class="topnftbuybuttontext" href = "itempagekaiju.php"><button class="topnftbutton3">View More</button></a>
 						
 							<img src = "images/heart.svg" class = "topnftitemlikelogo">
 							<p class="topnftitemlikes"> 99</p>
@@ -299,7 +299,7 @@ $mhmyes = 0;
 					
 						</div>
 						<div class = "topnftitemlikesection">
-							<a class="topnftbuybuttontext" href = "#"><button class="topnftbutton3">View More</button></a>
+							<a class="topnftbuybuttontext" href = "itempagecool.php"><button class="topnftbutton3">View More</button></a>
 						
 							<img src = "images/heart.svg" class = "topnftitemlikelogo">
 							<p class="topnftitemlikes"> 70</p>
@@ -329,7 +329,7 @@ $mhmyes = 0;
 					
 						</div>
 						<div class = "topnftitemlikesection">
-							<a class="topnftbuybuttontext" href = "#"><button class="topnftbutton3">View More</button></a>
+							<a class="topnftbuybuttontext" href = "itempagedood.php"><button class="topnftbutton3">View More</button></a>
 						
 							<img src = "images/heart.svg" class = "topnftitemlikelogo">
 							<p class="topnftitemlikes"> 20</p>
@@ -475,8 +475,9 @@ $mhmyes = 0;
 						<div class = "itembox2">
 						
 						<!-- MODEL/IMAGE GOES HERE-->
+						<a href = "https://nftnewstoday.com/2021/10/04/10-tips-for-avoiding-scams-and-staying-safe-on-the-decentralized-web/">
 						<img src = "images/resourcesthathelpcard1.png" class = "itemimage">
-					
+								</a>
 					
 						<!--DETAILS GOES HERE-->
 						<div class = "itemdetails">
@@ -494,8 +495,9 @@ $mhmyes = 0;
 						<div class = "itembox2">
 						
 						<!-- MODEL/IMAGE GOES HERE-->
+						<a href = "https://medium.datadriveninvestor.com/keeping-your-nft-purchases-more-secure-d3ea49abf629">
 						<img src = "images/resourcesthathelpcard2.png" class = "itemimage">
-					
+						</a>
 					
 						<!--DETAILS GOES HERE-->
 						<div class = "itemdetails">
@@ -512,8 +514,9 @@ $mhmyes = 0;
 						<div class = "itembox2">
 						
 						<!-- MODEL/IMAGE GOES HERE-->
+						<a href = "https://blog.opensea.io/digital-art/the-beginners-guide-to-creating-selling-digital-art-nfts/">
 						<img src = "images/resourcesthathelpcard3.png" class = "itemimage">
-					
+								</a>
 					
 						<!--DETAILS GOES HERE-->
 						<div class = "itemdetails">

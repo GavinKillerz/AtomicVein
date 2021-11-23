@@ -370,10 +370,10 @@
                  <div class = icon style = "right:295px"><i class="fab fa-ethereum"></i></div>
              <b>Please Key in your Price</b></label>
               </div>
-             <input type="number" class="offerbtn" id="eth68" class="numinput" placeholder="ETH" name="eth68" min="0.01" step=".01" required>
+             <input type="number"  id="eth68" class="numinput" placeholder="ETH" name="eth68" min="0.01" step=".01" required>
          </div>
        <div class="buttoncontains">
-         <button type="submit" name="submit1" value="insert">List Price</button>
+         <button type="submit"  class="offerbtn" name="submit1" value="insert">List Price</button>
      </div>
      <div class="buttoncontains2">
          <button type="button"  onclick="document.getElementById('id02').style.display='none'" class="offerbtn">Cancel List</button>
