@@ -8,6 +8,9 @@
     $user2 = '@username';
     $user1 = '@chadsquid';
     $ownership = $_POST['gay'];
+    $mhmyes = 0;
+    $prim = 1;
+    $alert = 1;
 ?>
 
 
@@ -103,7 +106,7 @@
 
     <p class="itemname">Item title name #6969</p>
 
-    
+    <?php if ($_POST['eth68']) { $ownership = 1;} ?>
     <?php
     if( $ownership == 1 ) {
     ?>
@@ -122,7 +125,22 @@
  
         <div class = icon><i class="fab fa-ethereum"></i></div> 
         <p class = "highestoffer">Current Price</p>
-        <p class = "currenthighest">7.333 ($30,537.11)</p>
+        <p class = "currenthighest">
+        <?php if ($_POST['eth68']) { $mhmyes = 1; $ownership = 1; $usd = '$' . $_POST['eth68'] * 4000;
+            echo $_POST['eth68'] . ' ETH ('.$usd.')';?>
+            
+    
+        <?php	} ?>
+
+		<?php
+        if ($mhmyes == 0 ) {?>
+        7.33 ETH ($30,537.11)
+
+        <?php
+
+            } ?>
+    </p>
+
     
         <?php
     if( $ownership == 1 ) {
@@ -316,12 +334,15 @@
          </footer>
       </body>
 </html>
-
+<?php if ($_POST['eth68']) { $alert = 0;
+} ?>
+   
 <?php
-    if( $ownership == 1 ) {
+
+    if( $ownership == 1 and $alert == 1) {
     ?>
     
-     <script>alert("Purchase Successful")</script>
+     <script>alert("Purchase Successfully by ChadSquid")</script>
      
         
     <?php } 
@@ -333,32 +354,32 @@
     
     <div id="id02" class="modal">
   
-  <span onclick="document.getElementById('id02').style.display='none'"
-                class="close" title="Close">&times;</span>
-       <!-- Modal Content -->
-       <form class="modal-content animate" action="connect.php" method="POST">
-          
-      
-       <h1> List Your Price </h1>
+<span onclick="document.getElementById('id02').style.display='none'"
+              class="close" title="Close">&times;</span>
+     <!-- Modal Content -->
+     <form class="modal-content animate" action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
+        
+    
+     <h1> List Your Price </h1>
 
-       <div class ="imagecontainer">
-       <img class="itemphoto2" src = "images/kaiju0.gif" alt = "itemphoto"> </div>
-           <div class="offerm">
-               <div class="offerbox">
-               <label for="offer">
-                   <div class = icon style = "right:295px"><i class="fab fa-ethereum"></i></div>
-               <b>Please Key in your Price</b></label>
-                </div>
-               <input type="number" id="eth69" class="numinput" placeholder="ETH" name="eth69" min="0.01" step=".01" required>
-           </div>
-         <div class="buttoncontains">
-           <button type="submit" name="submit1" value="insert">List Price</button>
-       </div>
-       <div class="buttoncontains2">
-           <button type="button"  onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel List</button>
-       </div>
-       </form>
-       
+     <div class ="imagecontainer">
+     <img class="itemphoto2" src = "images/kaiju0.gif" alt = "itemphoto"> </div>
+         <div class="offerm">
+             <div class="offerbox">
+             <label for="offer">
+                 <div class = icon style = "right:295px"><i class="fab fa-ethereum"></i></div>
+             <b>Please Key in your Price</b></label>
+              </div>
+             <input type="number" id="eth68" class="numinput" placeholder="ETH" name="eth68" min="0.01" step=".01" required>
+         </div>
+       <div class="buttoncontains">
+         <button type="submit" name="submit1" value="insert">List Price</button>
+     </div>
+     <div class="buttoncontains2">
+         <button type="button"  onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel List</button>
+     </div>
+     </form>
+     
      
         
     <?php } 
