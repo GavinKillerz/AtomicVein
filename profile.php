@@ -1,3 +1,9 @@
+<?php 
+$wan = 1;
+$too = 1;
+$tri = 1;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -14,10 +20,10 @@
    </head>
 <body>
 
-         <header>
-         <a href = "home.php">
-           <img class="logo" src = "images/logo.png" alt = "logo">
-           </a>
+<header>
+            <a href = "home.php">
+               <img  class="logoa" src = "images/logo.png" alt = "logo">
+               </a>
             <nav>
                <ul class="nav_links">
                   <li><a  href = "index.html">Explore</a></li>
@@ -84,13 +90,42 @@
                </div>
                <div class = "usersection">
                    <p class ="username">
-                      Chad Squid
+                      <?php if (!empty($_POST)) {
+                         
+                         $wan = 0; echo htmlspecialchars($_POST["name"]); ?><br>
+                        <?php }
+                        ?>
+                        <?php if ($wan == 1) {
+                         
+                            ?>Chad Squid<br>
+                           <?php }
+                           ?>
+                        
                   </p>
                   <p class ="usertag">
-                     @chadsquidds
+                  <?php if (!empty($_POST)) {
+                         
+                         $too = 0; echo htmlspecialchars('@' . $_POST["tag"]); ?><br>
+                        <?php }
+                        ?>
+                        <?php if ($too == 1) {
+                         
+                            ?>@chadsquid<br>
+                           <?php }
+                           ?>
+                     
                   </p>
                   <p class ="userbio">
-                     Hi I'm ChadSquid, the chaddest of chad, the squiddest of squid. Squid Squid Squid Squid Squid Squid Squid Squid Squid Squid Squid Squid 
+                  <?php if (!empty($_POST)) {
+                         
+                         $tri = 0; echo htmlspecialchars($_POST["bio"]); ?><br>
+                        <?php }
+                        ?>
+                        <?php if ($tri == 1) {
+                         
+                            ?>Hi I'm ChadSquid, the chaddest of chad, the squiddest of squid. Squid Squid Squid Squid Squid Squid Squid Squid Squid Squid Squid Squid<br>
+                           <?php }
+                           ?>
                   </p>
                   <div class ="joinsection">
                   <p class ="joindate"> <img src="images/calender.svg"  class="calender">
@@ -166,7 +201,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 69</p>
@@ -197,7 +232,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempagecool.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempagecool.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 70</p>
@@ -227,7 +262,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 40</p>
@@ -260,7 +295,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 35</p>
@@ -292,7 +327,7 @@
       
             </div>
             <div class = "itemlikesection">
-               <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+               <a class="buybuttontext" href = "itempagecool.php"><button class="button3">View More</button></a>
             
                <img src = "images/heart.svg" class = "itemlikelogo">
                <p class="itemlikes"> 31</p>
@@ -323,7 +358,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempagedood.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempagedood.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 52</p>
@@ -354,7 +389,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempagedood.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 11</p>
@@ -384,7 +419,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempagecool.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 33</p>
@@ -417,7 +452,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempagecool.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 74</p>
@@ -449,7 +484,7 @@
       
             </div>
             <div class = "itemlikesection">
-               <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+               <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
             
                <img src = "images/heart.svg" class = "itemlikelogo">
                <p class="itemlikes"> 54</p>
@@ -491,7 +526,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempagekaiju.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempagekaiju.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 99</p>
@@ -522,7 +557,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 69</p>
@@ -553,7 +588,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 70</p>
@@ -586,7 +621,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 55</p>
@@ -618,7 +653,7 @@
       
             </div>
             <div class = "itemlikesection">
-               <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+               <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
             
                <img src = "images/heart.svg" class = "itemlikelogo">
                <p class="itemlikes"> 87</p>
@@ -649,7 +684,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 99</p>
@@ -680,7 +715,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 70</p>
@@ -710,7 +745,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 45</p>
@@ -743,7 +778,7 @@
 
       </div>
       <div class = "itemlikesection">
-         <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+         <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
       
          <img src = "images/heart.svg" class = "itemlikelogo">
          <p class="itemlikes"> 67</p>
@@ -775,7 +810,7 @@
       
             </div>
             <div class = "itemlikesection">
-               <a class="buybuttontext" href = "itempage.html"><button class="button3">View More</button></a>
+               <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
             
                <img src = "images/heart.svg" class = "itemlikelogo">
                <p class="itemlikes"> 97</p>
@@ -891,7 +926,7 @@
    <span onclick="document.getElementById('id01').style.display='none'"
                  class="close" title="Close">&times;</span>
         <!-- Modal Content -->
-        <form class="modal-content animate" action="/action_page.php">
+        <form class="modal-content animate" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
            
        
         <h1> Edit Your Profile </h1>
@@ -916,6 +951,7 @@
            
           <div class="buttoncontains">
             <button type="submit" class="acceptbutton" >Make Edit</button>
+            
         </div>
         <div class="buttoncontains2">
             <button type="button"  onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel Edit</button>

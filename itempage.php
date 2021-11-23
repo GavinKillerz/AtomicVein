@@ -5,8 +5,8 @@
     $password = "";
     $dbname = "test";
     $handler = mysqli_connect($servername, $username, $password, $dbname);
-    $user2 = 'Username';
-    $user1 = 'ChadSquid';
+    $user2 = '@username';
+    $user1 = '@chadsquid';
     $ownership = $_POST['gay'];
 ?>
 
@@ -34,7 +34,7 @@
 
          <header>
          <a href = "home.php">
-           <img class="logo" src = "images/logo.png" alt = "logo">
+           <img class="logoa" src = "images/logo.png" alt = "logo">
            </a>
             <nav>
                <ul class="nav_links">

@@ -17,7 +17,7 @@
 
          <header>
             <a href = "home.php">
-                <img class="logo" src = "images/logo.png" alt = "logo">
+                <img class="logoa" src = "images/logo.png" alt = "logo">
                 </a>
             <nav>
                <ul class="nav_links">
