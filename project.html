@@ -17,7 +17,7 @@
 <body>
 
          <header>
-            <a href = "home.php">
+            <a class="logoa" href = "home.php">
                <img class="logo" src = "images/logo.png" alt = "logo">
                </a>
             <nav>
@@ -135,33 +135,43 @@
       
 <div class="w3-container">
 
-   
       <div class="w3-row">
       <a id="defaultOpen" href="javascript:void(0)" onclick="openTab(event, 'Collection');">
         <div class="tablink w3-bottombar"><img src = "images/item.svg" class = "itemlogo">Items</div>
       </a>
    </div>
+  
   <div class="w3-row2">
-        
          <a href="javascript:void(0)" onclick="openTab(event, 'Like');">
            <div class="tablink w3-bottombar  "><img src = "images/activity.svg" class = "itemlogo">Activity</div>
          </a>
       
      </div>
+
+     <div class="w3-row2" style="display:none,">
+      <a href="javascript:void(0)" onclick="openTab(event, 'Like');">
+        <div class="tablink w3-bottombar  "><img src = "images/activity.svg" class = "itemlogo">Activity</div>
+      </a>
+   
+  </div>
 </div>
 
 
-<div id="Collection" class="w3-container city" style="display:none">
 
+<div id="Collection" class="w3-container city" style="display:none">
+ 
+   
    <div class="filters">
       
-      <select class = "select">
+      <select class = "select" id="sel" onchange="openTab">
          <option value = "popularitems">Popular Items</option>
-         <option value = "recentlylisted">Recently Listed</option>
-   
+         <option value = "recentlylisted"  >Recently Listed</option>
+       
      </select>
    </div>
-  
+   
+   
+   
    <div class="bordersection">
     
    </div>
@@ -190,13 +200,13 @@
    
          </div>
          <div class = "itemlikesection">
-            <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
          
             <img src = "images/heart.svg" class = "itemlikelogo">
             <p class="itemlikes"> 99</p>
    
         
-         </div>
+        
          </div>
          </div>
       </ul>
@@ -221,7 +231,7 @@
    
          </div>
          <div class = "itemlikesection">
-            <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
          
             <img src = "images/heart.svg" class = "itemlikelogo">
             <p class="itemlikes"> 69</p>
@@ -252,7 +262,7 @@
    
          </div>
          <div class = "itemlikesection">
-            <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
          
             <img src = "images/heart.svg" class = "itemlikelogo">
             <p class="itemlikes"> 70</p>
@@ -285,7 +295,7 @@
    
          </div>
          <div class = "itemlikesection">
-            <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
          
             <img src = "images/heart.svg" class = "itemlikelogo">
             <p class="itemlikes"> 55</p>
@@ -317,7 +327,7 @@
          
                </div>
                <div class = "itemlikesection">
-                  <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+                  <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
                
                   <img src = "images/heart.svg" class = "itemlikelogo">
                   <p class="itemlikes"> 87</p>
@@ -348,7 +358,7 @@
    
          </div>
          <div class = "itemlikesection">
-            <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
          
             <img src = "images/heart.svg" class = "itemlikelogo">
             <p class="itemlikes"> 99</p>
@@ -379,7 +389,7 @@
    
          </div>
          <div class = "itemlikesection">
-            <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
          
             <img src = "images/heart.svg" class = "itemlikelogo">
             <p class="itemlikes"> 70</p>
@@ -409,7 +419,7 @@
    
          </div>
          <div class = "itemlikesection">
-            <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
          
             <img src = "images/heart.svg" class = "itemlikelogo">
             <p class="itemlikes"> 45</p>
@@ -442,7 +452,7 @@
    
          </div>
          <div class = "itemlikesection">
-            <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
          
             <img src = "images/heart.svg" class = "itemlikelogo">
             <p class="itemlikes"> 67</p>
@@ -474,19 +484,21 @@
          
                </div>
                <div class = "itemlikesection">
-                  <a class="buybuttontext" href = "#"><button class="button3">View More</button></a>
+                  <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
                
                   <img src = "images/heart.svg" class = "itemlikelogo">
                   <p class="itemlikes"> 97</p>
          
             
-         
+               </div>
                </div>
                </div>
                </div>
       </ul>   
    </div>
  </div>
+
+
 
  <div id="Like" class="w3-container city" style="display:none">
    
@@ -608,7 +620,375 @@ new Chart("chart02", {
 
  
 </div>
+<div id="New" class="w3-container city" style="display:none">
+   <div class="filters">
+      
+      <select class = "select" id="sels" onchange="openTab">
+         <option value = "recentlylisted"  >Recently Listed</option>
+         <option value = "popularitems">Popular Items</option>
+         
+       
+     </select>
+   </div>
+   
+   
+   
+   <div class="bordersection">
+    
+   </div>
+   <div class="bordersection2">
 
+   </div>
+   <div class="itemsection">
+
+   
+   <ul class = "cards4">
+      <div class = "itemcontainer">
+         <div class = "itembox">
+   
+         <!-- MODEL/IMAGE GOES HERE-->
+         <img src = "images/kaiju2887.gif" class = "itemimage">
+   
+   
+         <!--DETAILS GOES HERE-->
+         <div class = "itemdetails">
+   
+         <!-- DETAILS of card -->
+         <p class="itemproject"><a href = "projectdood.html"> KAIJUKINGZ </p>
+         <p class="itempricetag"> PRICE</p>
+         <p class="itemname"> KAIJUKINGZ #2887</p>
+         <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 13.4</p>
+   
+         </div>
+         <div class = "itemlikesection">
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
+         
+            <img src = "images/heart.svg" class = "itemlikelogo">
+            <p class="itemlikes"> 69</p>
+         </div>
+         </div>
+         </div>
+      </ul>
+   
+      <!--Fifth card-->
+   <ul class = "cards5">
+      <div class = "itemcontainer">
+         <div class = "itembox">
+   
+   
+         <!-- MODEL/IMAGE GOES HERE-->
+         <img src = "images/kaiju8.gif" class = "itemimage">
+   
+   
+         <!--DETAILS GOES HERE-->
+         <div class = "itemdetails">
+   
+         <!-- DETAILS of card -->
+         <p class="itemproject"><a href = "projectdood.html"> KAIJUKINGZ </p>
+         <p class="itempricetag"> PRICE</p>
+         <p class="itemname"> KAIJUKINGZ #8</p>
+         <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 16,7</p>
+   
+         </div>
+         <div class = "itemlikesection">
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
+         
+            <img src = "images/heart.svg" class = "itemlikelogo">
+            <p class="itemlikes"> 67</p>
+   
+      
+   
+         </div>
+         </div>
+         </div>
+      </ul>
+   
+         <!--Sixth card-->
+   <ul class = "cards6">
+      <div class = "itemcontainer">
+         <div class = "itembox">
+   
+   
+         <!-- MODEL/IMAGE GOES HERE-->
+         <img src = "images/kaiju7.gif" class = "itemimage">
+   
+   
+         <!--DETAILS GOES HERE-->
+         <div class = "itemdetails">
+   
+         <!-- DETAILS of card -->
+         <p class="itemproject"><a href = "projectdood.html"> KAIJUKINGZ</p>
+         <p class="itempricetag"> PRICE</p>
+         <p class="itemname"> KAIJUKINGZ #7 </p>
+         <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 10.5</p>
+   
+         </div>
+         <div class = "itemlikesection">
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
+         
+            <img src = "images/heart.svg" class = "itemlikelogo">
+            <p class="itemlikes"> 87</p>
+   
+      
+   
+         </div>
+         </div>
+         </div>
+      </ul>
+   
+         <!--Seventh card-->
+   <ul class = "cards7">
+      <div class = "itemcontainer">
+         <div class = "itembox">
+         
+         <!-- MODEL/IMAGE GOES HERE-->
+         <img src = "images/kaiju6.gif" class = "itemimage">
+   
+   
+         <!--DETAILS GOES HERE-->
+         <div class = "itemdetails">
+         
+         <!-- DETAILS of card -->
+         <p class="itemproject"><a href = "projectdood.html"> KAIJUKINGZ </p>
+         <p class="itempricetag"> PRICE</p>
+         <p class="itemname"> KAIJUKINGZ #6</p>
+         <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 16.4</p>
+   
+         </div>
+         <div class = "itemlikesection">
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
+         
+            <img src = "images/heart.svg" class = "itemlikelogo">
+            <p class="itemlikes"> 99</p>
+   
+        
+         </div>
+         </div>
+         </div>
+      </ul>
+   
+         <ul class = "cards8">
+            <div class = "itemcontainer">
+               <div class = "itembox">
+         
+         
+               <!-- MODEL/IMAGE GOES HERE-->
+               <img src = "images/kaiju5.gif" class = "itemimage">
+         
+         
+               <!--DETAILS GOES HERE-->
+               <div class = "itemdetails">
+         
+             <!-- DETAILS of card -->
+             <p class="itemproject"><a href = "projectdood.html"> KAIJUKINGZ </p>
+             <p class="itempricetag"> PRICE</p>
+             <p class="itemname"> KAIJUKINGZ #5</p>
+             <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 13.9</p>
+         
+               </div>
+               <div class = "itemlikesection">
+                  <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
+               
+                  <img src = "images/heart.svg" class = "itemlikelogo">
+                  <p class="itemlikes"> 55</p>
+         
+            
+         
+               </div>
+               </div>
+               </div>
+      </ul>
+     <!--Fourth card-->
+   <ul class = "cards4">
+      <div class = "itemcontainer">
+         <div class = "itembox">
+       
+   
+         <!-- MODEL/IMAGE GOES HERE-->
+         <img src = "images/kaiju4.gif" class = "itemimage">
+   
+   
+         <!--DETAILS GOES HERE-->
+         <div class = "itemdetails">
+    
+         <!-- DETAILS of card -->
+         <p class="itemproject"><a href = "projectdood.html"> KAIJUKINGZ </p>
+         <p class="itempricetag"> PRICE</p>
+         <p class="itemname"> KAIJUKINGZ #4</p>
+         <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 17</p>
+   
+         </div>
+         <div class = "itemlikesection">
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
+         
+            <img src = "images/heart.svg" class = "itemlikelogo">
+            <p class="itemlikes"> 45</p>
+   
+       
+   
+         </div>
+         </div>
+         </div>
+      </ul>
+   
+      <!--Fifth card-->
+   <ul class = "cards5">
+      <div class = "itemcontainer">
+         <div class = "itembox">
+         
+         <!-- MODEL/IMAGE GOES HERE-->
+         <img src = "images/kaiju3.gif" class = "itemimage">
+   
+   
+         <!--DETAILS GOES HERE-->
+         <div class = "itemdetails">
+         
+         <!-- DETAILS of card -->
+         <p class="itemproject"><a href = "projectdood.html"> KAIJUKINGZ </p>
+         <p class="itempricetag"> PRICE</p>
+         <p class="itemname"> KAIJUKINGZ #3</p>
+         <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 14.4</p>
+   
+         </div>
+         <div class = "itemlikesection">
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
+         
+            <img src = "images/heart.svg" class = "itemlikelogo">
+            <p class="itemlikes"> 99</p>
+   
+        
+        
+         </div>
+         </div>
+      </ul>
+   
+         <!--Sixth card-->
+   <ul class = "cards6">
+      <div class = "itemcontainer">
+         <div class = "itembox">
+       
+   
+         <!-- MODEL/IMAGE GOES HERE-->
+         <img src = "images/kaiju2.gif" class = "itemimage">
+   
+   
+         <!--DETAILS GOES HERE-->
+         <div class = "itemdetails">
+    
+   
+            <!-- DETAILS of card -->
+            <p class="itemproject"><a href = "projectdood.html"> KAIJUKINGZ </p>
+            <p class="itempricetag"> PRICE</p>
+            <p class="itemname"> KAIJUKINGZ #2</p>
+            <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 14.4</p>
+   
+         </div>
+         <div class = "itemlikesection">
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
+         
+            <img src = "images/heart.svg" class = "itemlikelogo">
+            <p class="itemlikes"> 70</p>
+   
+       
+   
+         </div>
+         </div>
+         </div>
+      </ul>
+   
+         <!--Seventh card-->
+   <ul class = "cards7">
+      <div class = "itemcontainer">
+         <div class = "itembox">
+   
+         <!-- MODEL/IMAGE GOES HERE-->
+         <img src = "images/kaiju1.gif" class = "itemimage">
+   
+   
+         <!--DETAILS GOES HERE-->
+         <div class = "itemdetails">
+   
+         <!-- DETAILS of card -->
+         <p class="itemproject"><a href = "projectdood.html"> KAIJUKINGZ </p>
+         <p class="itempricetag"> PRICE</p>
+         <p class="itemname"> KAIJUKINGZ #1</p>
+         <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 17</p>
+   
+         </div>
+         <div class = "itemlikesection">
+            <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
+         
+            <img src = "images/heart.svg" class = "itemlikelogo">
+            <p class="itemlikes"> 70</p>
+         </div>
+         </div>
+         </div>
+      </ul>
+   
+         <ul class = "cards8">
+            <div class = "itemcontainer">
+               <div class = "itembox">
+         
+         
+               <!-- MODEL/IMAGE GOES HERE-->
+               <img src = "images/kaiju0.gif" class = "itemimage">
+         
+         
+               <!--DETAILS GOES HERE-->
+               <div class = "itemdetails">
+         
+               <!-- DETAILS of card -->
+               <p class="itemproject"><a href = "projectdood.html"> KAIJUKINGZ</p>
+               <p class="itempricetag"> PRICE</p>
+               <p class="itemname"> KAIJUKINGZ #0 </p>
+               <p class="itemprice"><img src = "images/eth.svg" class = "itempricelogo"> 20</p>
+         
+               </div>
+               <div class = "itemlikesection">
+                  <a class="buybuttontext" href = "itempage.php"><button class="button3">View More</button></a>
+               
+                  <img src = "images/heart.svg" class = "itemlikelogo">
+                  <p class="itemlikes"> 97</p>
+         
+            
+               </div>
+               </div>
+               </div>
+               </div>
+      </ul>   
+   </div>
+ </div>
+
+
+<script>
+
+var select = document.querySelector('#sel'),
+    input = document.querySelector('input[type="button"]');
+select.addEventListener('change',function(){
+    openTab(event, 'New')
+});
+input.addEventListener('click',function(){
+    select.value = 2;
+    select.dispatchEvent(new Event('change'));
+});
+
+
+</script>
+
+<script>
+
+   var select = document.querySelector('#sels'),
+       input = document.querySelector('input[type="button"]');
+   select.addEventListener('change',function(){
+       openTab(event, 'Collection')
+   });
+   input.addEventListener('click',function(){
+       select.value = 2;
+       select.dispatchEvent(new Event('change'));
+   });
+   
+   
+   </script>
 <script>
    function openTab(evt, tabName) {
      var i, x, tablinks;
@@ -622,11 +1002,15 @@ new Chart("chart02", {
      }
      document.getElementById(tabName).style.display = "block";
      evt.currentTarget.firstElementChild.className += " w3-border-orange";
+     
    }
    document.getElementById("defaultOpen").click();
    </script>
-            
 
+
+   </script>
+      
+            
          <footer class = "footer">
             <div class = "container">
                <div class ="row">
@@ -668,7 +1052,8 @@ new Chart("chart02", {
 
          </footer>
       </body>
+
+      
 </html>
 
 
-      
