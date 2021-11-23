@@ -35,7 +35,7 @@ $sql = "CREATE TABLE ethoffer (
 if($offer >= 7.33){
   ?>
   <html>
-  <form id="form" action="itempage2.php" method="POST">
+  <form id="form" action="itempage.php" method="POST">
   <input type="hidden" name="gay" value="<?php echo $gaynon ?>">
   </form>
   <script>
@@ -51,7 +51,7 @@ if($offer >= 7.33){
 if($offer < 7.33){
     ?>
 <html>
-<form id="form" action="itempage2.php" method="POST">
+<form id="form" action="itempage.php" method="POST">
 <input type="hidden" name="gay" value="<?php echo $gay ?>">
 </form>
 </form>
@@ -68,7 +68,7 @@ if($offer < 7.33){
   $percent = (1 - ($offer /7.33)) * 100;
   $roundpercent = round($percent,2) . '% Below';
   $sql = "INSERT INTO ethoffer (Price,USD,Superidol,Expiration,Previous) VALUES ('$offer','$usd','$roundpercent','in 20 hours','ChadSquid')";
-  header("Location:./itempage2.php");
+  header("Location:./itempage.php");
 }  
 
 

@@ -1,19 +1,3 @@
-<?php
-    error_reporting(E_ALL ^ E_WARNING); 
-    $servername = "127.0.0.1";
-    $username = "root";
-    $password = "";
-    $dbname = "test";
-    $handler = mysqli_connect($servername, $username, $password, $dbname);
-    $user2 = 'Username';
-    $user1 = 'ChadSquid';
-    $ownership = $_POST['gay'];
-?>
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -28,19 +12,18 @@
       
 
    </head>
-   
 <body>
     
 
          <header>
-         <a href = "home.php">
-           <img class="logo" src = "images/logo.png" alt = "logo">
-           </a>
+            <a href = "home.php">
+                <img class="logo" src = "images/logo.png" alt = "logo">
+                </a>
             <nav>
                <ul class="nav_links">
                   <li><a href = "index.html">Explore</a></li>
                   <li><a href = "statistics.html">Statistics</a></li>
-                  <li><a href = "profile.php">Your account</a></li>
+                  <li><a href = "profile.html">Your account</a></li>
                </ul>
             </nav>
 
@@ -96,54 +79,27 @@
 
 <!-- Right side things-->
 
-    <img class="itemphoto" src = "images/kaiju0.gif" alt = "itemphoto">
+    <img class="itemphoto" src = "images/kaiju3.gif" alt = "itemphoto">
 
 
-    <p class="projectname">Project name</p>
+    <p class="projectname">KAIJU KINGZ</p>
 
-    <p class="itemname">Item title name #6969</p>
+    <p class="itemname">KAIJU KINGZ #3</p>
 
-    
-    <?php
-    if( $ownership == 1 ) {
-    ?>
-    <p class="owner">Owned by <?php echo $user1?></p>
-
-    <?php } 
-    else { ?>
-
-        <p class="owner">Owned by <?php echo $user2?></p>
-
-    <?php } ?>
-
-   
+    <p class="owner">Owned by @LoserSponge</p></p>
 
     <div class = "offersbox">
  
         <div class = icon><i class="fab fa-ethereum"></i></div> 
-        <p class = "highestoffer">Current Price</p>
-        <p class = "currenthighest">7.333 ($30,537.11)</p>
-    
-        <?php
-    if( $ownership == 1 ) {
-    ?>
-     <button class ="makeyourofferbox" onclick="document.getElementById('id02').style.display='block'" ><p>List Price</p></button>
-        
-    <?php } 
-    else { ?>
-
-<button class ="makeyourofferbox" onclick="document.getElementById('id01').style.display='block'" ><p>Make offer</p></button>
-
-    <?php } ?>
-
-        
+        <p class = "highestoffer">Highest Offer</p>
+        <p class = "currenthighest">14.4 ETH ($60,818.61)</p>
+     
+            <button class ="makeyourofferbox"><p>Make offer</p></button>
 
    
-         
 
 
     </div>
-
 
     <div class = "pricehistory">
         <div class = icon><i class="fas fa-chart-line"></i></div> 
@@ -182,31 +138,53 @@
         <table class="content-table">
             <thead>
                 <tr>
-                   <th>Price(ETH)</th>
+                   <th>Price</th>
                    <th>USD Price</th>
                    <th>Floor Difference</th>
                    <th>Expiration</th>
                    <th>From</th>
                 </tr>
-                </thead>
-                <tbody>
+            </thead>
+            <tbody>
                 <tr>
-                   <?php
-                   $conn=mysqli_connect("localhost","root","","test");
-                   $sql="SELECT * FROM ethoffer";
-                   $result = $conn->query($sql);
+                   <td>10 WETH </td>
+                   <td>$43,564.46</td>
+                   <td>8.3% below</td>
+                   <td>in 20 hours</td>
+                   <td>Chad Squid</td>
+                </tr>
 
-                   if($result->num_rows >0){
-                       while($row=$result->fetch_assoc()){
-                           echo"<tr><td>".$row["Price"] . "</td><td>" .$row["USD"] . "</td><td>" .$row["Superidol"] . "</td><td>" .$row["Expiration"] . "</td><td>" .$row["Previous"] . "</td></tr>";
-                       }
-                   }
-                   else{
-                   }
-                   $conn->close()
-                   ?>
-                   <tr>
-                
+                <tr>
+                   <td>7.33 WETH</td>
+                   <td>$29,242.83</td>
+                   <td>12.2% Below</td>
+                   <td>in 5 hours</td>
+                   <td>Okay Crab</td>
+                </tr>
+
+                <tr>
+                   <td>5.33 WETH </td>
+                   <td>$22,490.13</td>
+                   <td>12.4% Below</td>
+                   <td>in 3 hours</td>
+                   <td>Fish Star</td>
+                </tr>
+
+                <tr>
+                   <td>3.33 WETH </td>
+                   <td>$14,003.29</td>
+                   <td>8.3% below</td>
+                   <td>in 20 hours</td>
+                   <td>Cave Squirrel</td>
+                </tr>
+
+                <tr>
+                   <td>2.33 WETH</td>
+                   <td>$10,537.11</td>
+                   <td>8.3% below</td>
+                   <td>in 20 hours</td>
+                   <td>Small Whale</td>
+                </tr>
             </tbody>
         </table>
 
@@ -226,7 +204,7 @@
             <div class = "icon"><i class="fas fa-angle-down"></i></div>
         </label>
         <div class = "content">
-            <p>one two three one two three one two three one two three one two three one two three one two three </p>
+            <p>Created By Kaiju-Kingz</p>
         </div>
         </div>
     
@@ -239,7 +217,7 @@
         <div class = "icon"><i class="fas fa-angle-down"></i></div>
     </label>
     <div class = "content">
-        <p>one two three one two three one two three one two three one two three one two three one two three </p>
+        <p>Evil Kaiju, Genesis</p>
     </div>
     </div>
 
@@ -253,7 +231,10 @@
     <div class = "icon"><i class="fas fa-angle-down"></i></div>
 </label>
 <div class = "content">
-    <p>sifdughsidfughsidfughuisdfghiusdfhgsdfiughsduifsifg</p>
+    <p>3,333 Genesis Kaiju Kingz created by Augminted Labs to protect the metaverse. 
+        The community is all about growth and providing a place for the future of web3 to learn, 
+        build, and conquer. 
+        Join the Kingz and live forever as a legend. 6666 babies to accompany them.</p>
 </div>
 </div>
 
@@ -267,7 +248,7 @@
     <div class = "icon"><i class="fas fa-angle-down"></i></div>
 </label>
 <div class = "content">
-    <p>one two threeone two three one two three one two threeone two three one two three one two three</p>
+    <p>Token ID - 3<br>Token Standard - ERC-721<br>Blockchain - Ethereum</p>
 </div>
 </div>
 </div>
@@ -294,7 +275,7 @@
                   <div class = "footer-col">
                      <h4>Developers</h4>
                      <ul>
-                        <li><a href = "https://www.antiersolutions.com/non-fungible-token-development/">NFT standard</a></li>
+                       <li><a href = "https://www.antiersolutions.com/non-fungible-token-development/">NFT standard</a></li>
                         <li><a href = "https://docs.opensea.io/">Whitepaper</a></li>
                         <li><a href = "https://docs.opensea.io/docs/developer-tutorials">Dev groups</a></li>
                         <li><a href = "https://docs.opensea.io/reference/request-an-api-key">API</a></li>
@@ -316,80 +297,3 @@
          </footer>
       </body>
 </html>
-
-<?php
-    if( $ownership == 1 ) {
-    ?>
-    
-     <script>alert("Purchase Successful")</script>
-     
-        
-    <?php } 
-    else { }?>
- 
-<?php
-    if( $ownership == 1 ) {
-    ?>
-    
-    <div id="id02" class="modal">
-  
-  <span onclick="document.getElementById('id02').style.display='none'"
-                class="close" title="Close">&times;</span>
-       <!-- Modal Content -->
-       <form class="modal-content animate" action="connect.php" method="POST">
-          
-      
-       <h1> List Your Price </h1>
-
-       <div class ="imagecontainer">
-       <img class="itemphoto2" src = "images/kaiju0.gif" alt = "itemphoto"> </div>
-           <div class="offerm">
-               <div class="offerbox">
-               <label for="offer">
-                   <div class = icon style = "right:295px"><i class="fab fa-ethereum"></i></div>
-               <b>Please Key in your Price</b></label>
-                </div>
-               <input type="number" id="eth69" class="numinput" placeholder="ETH" name="eth69" min="0.01" step=".01" required>
-           </div>
-         <div class="buttoncontains">
-           <button type="submit" name="submit1" value="insert">List Price</button>
-       </div>
-       <div class="buttoncontains2">
-           <button type="button"  onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel List</button>
-       </div>
-       </form>
-       
-     
-        
-    <?php } 
-    else {?><div id="id01" class="modal">
-  
-        <span onclick="document.getElementById('id01').style.display='none'"
-                      class="close" title="Close">&times;</span>
-             <!-- Modal Content -->
-             <form class="modal-content animate" action="connect.php" method="POST">
-                
-            
-             <h1> Make an Offer </h1>
-     
-             <div class ="imagecontainer">
-             <img class="itemphoto2" src = "images/kaiju0.gif" alt = "itemphoto"> </div>
-                 <div class="offerm">
-                     <div class="offerbox">
-                     <label for="offer">
-                         <div class = icon style = "right:295px"><i class="fab fa-ethereum"></i></div>
-                     <b>Please Key in your offer</b></label>
-                      </div>
-                     <input type="number" id="eth69" class="numinput" placeholder="ETH" name="eth69" min="0.01" step=".01" required>
-                 </div>
-               <div class="buttoncontains">
-                 <button type="submit" name="submit1" value="insert">Make Offer</button>
-             </div>
-             <div class="buttoncontains2">
-                 <button type="button"  onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel Offer</button>
-             </div>
-             </form>  <?php }?>   
-
-
-
-        

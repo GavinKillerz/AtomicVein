@@ -14,12 +14,14 @@ $mhmyes = 0;
 
 <body>
 		<header>		
-			<img class="logo" src = "images/logo.png" alt = "logo">
+		<a href = "home.php">
+           <img class="logo" src = "images/logo.png" alt = "logo">
+           </a>
 			 <nav>
 				<ul class="nav_links">
 				   <li><a href = "index.html">Explore</a></li>
 				   <li><a href = "statistics.html">Statistics</a></li>
-				   <li><a href = "#">Your account</a></li>
+				   <li><a href = "profile.php">Your account</a></li>
 				</ul>
 			 </nav>
 			 <a class="cta" href = "#"><button class="button1" onclick="openFunction()">Wallet</button></a>
@@ -538,11 +540,11 @@ $mhmyes = 0;
 
 				 <h4>Explore</h4>
 				 <ul>
-					<li><a href = "index.html">Explore</a></li>
-					<li><a href = "#">Buy and Sell</a></li>
-					<li><a href = "#">Trade</a></li>
-					<li><a href = "statistics.html">View statistics</a></li>
-				 </ul>
+                        <li><a href = "index.html">Explore</a></li>
+                        <li><a href = "itempage.php">Buy and Sell</a></li>
+                        <li><a href = "itempage.php">Trade</a></li>
+                        <li><a href = "statistics.html">View statistics</a></li>
+                     </ul>
 			  </div>
 
 			  <div class = "footer-col">
