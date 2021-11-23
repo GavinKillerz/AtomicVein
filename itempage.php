@@ -370,13 +370,13 @@
                  <div class = icon style = "right:295px"><i class="fab fa-ethereum"></i></div>
              <b>Please Key in your Price</b></label>
               </div>
-             <input type="number" id="eth68" class="numinput" placeholder="ETH" name="eth68" min="0.01" step=".01" required>
+             <input type="number" class="offerbtn" id="eth68" class="numinput" placeholder="ETH" name="eth68" min="0.01" step=".01" required>
          </div>
        <div class="buttoncontains">
          <button type="submit" name="submit1" value="insert">List Price</button>
      </div>
      <div class="buttoncontains2">
-         <button type="button"  onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel List</button>
+         <button type="button"  onclick="document.getElementById('id02').style.display='none'" class="offerbtn">Cancel List</button>
      </div>
      </form>
      
@@ -404,10 +404,10 @@
                      <input type="number" id="eth69" class="numinput" placeholder="ETH" name="eth69" min="0.01" step=".01" required>
                  </div>
                <div class="buttoncontains">
-                 <button type="submit" name="submit1" value="insert">Make Offer</button>
+                 <button type="submit" class="offerbtn" name="submit1" value="insert">Make Offer</button>
              </div>
              <div class="buttoncontains2">
-                 <button type="button"  onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel Offer</button>
+                 <button type="button"  onclick="document.getElementById('id01').style.display='none'" class="offerbtn">Cancel Offer</button>
              </div>
              </form>  <?php }?>   
 

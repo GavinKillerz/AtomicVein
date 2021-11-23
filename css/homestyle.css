@@ -441,7 +441,11 @@ img {
     box-sizing: border-box;
     margin: 20px 10px;
 }
-
+.logoa{
+    cursor: pointer;
+    margin-right: 800px;
+    
+}
 .topnftitemimage{
     height:150px;
     max-height: 100%;

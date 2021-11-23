@@ -183,6 +183,11 @@
     position: relative; 
 }
 
-.text{
+.logoa{
+    cursor: pointer;
+    margin-right: 800px;
+    
+}
+
 
 }
