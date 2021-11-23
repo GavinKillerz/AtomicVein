@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 
 
+
+
+.logoa{
+    cursor: pointer;
+    margin-right: 650px !important;
+    
+}
 .itemphoto{
     margin-left: 400px;
     margin-top: 90px;
